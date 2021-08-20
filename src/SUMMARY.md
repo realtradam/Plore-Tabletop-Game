@@ -2,13 +2,13 @@
 
 [Intro](./intro.mdown)
 
-- [Build Your Character](character-builder.mdown)
+- [Build Your Character](./character-builder.mdown)
 	- [Attributes](./attributes.mdown)
 
 - [Spellcasting]()
 
 - [Running The Game]()
-	- [Combat]()
+	- [Combat](./combat.mdown)
 	- [Social]()
 		- [Bartering]()
 	- [Travel]()
