@@ -1,0 +1,6 @@
+# The (Placeholder Name) Table Top RPG by Tradam
+![travis build](https://travis-ci.com/realtradam/pttrpg.svg?branch=master&status=passed)
+[![Ko-Fi](https://img.shields.io/static/v1?message=Buy%20me%20a%20coffee&logo=kofi&labelColor=ff5e5b&color=434B57&logoColor=white&label=%20)](https://ko-fi.com/tradam)
+
+### If you came here to see the rules then go to this [Link](https://realtradam.github.io/pttrpg/) 
+
