@@ -1,5 +1,7 @@
 # Attributes
 
+All attributes are grouped up into 4 distinct groups, each group representing one of the four suits in a tarot deck. Each group contains 3 primary stats, and 1 derivative stat that is calculated based on other factors.
+
 ## Suit Stats:
 
 ### Physical Feats (Diamonds/Pentacles - Autumn)
