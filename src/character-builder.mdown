@@ -1,0 +1,48 @@
+# Build Your Character
+
+Players get 3 points to spend for each Suit Stat(12 total points). They also get an additional 3 points to spend on their primary Suit Stat, and 2 additional points to spend on their secondary Suit Stat. The only limitation is each stat cannot go higher then 3 points during character creation.
+
+Once the points have been alloted, health can be determined. Max health is equal to your Diamonds total times five. 
+
+#### Sample Character Creation
+
+An example character created for a character with a primary stat in Hearts and a secondary stat in Spades
+
+
+| Diamonds  | Value |
+|-----------|-------|
+| Endurance | 0     |
+| Strength  | 2     |
+| Precision | 1     |
+| Total     | 3     |
+
+
+| Clubs     | Value |
+|-----------|-------|
+| Endurance | 1     |
+| Strength  | 1     |
+| Precision | 1     |
+| Total     | 3     |
+  
+  
+| Hearts     | Value |
+|------------|-------|
+| Presence   | 2     |
+| Deception  | 3     |
+| Empathy    | 1     |
+| Total      | 6     |
+  
+  
+| Spades     | Value |
+|------------|-------|
+| Analytics  | 3     |
+| Practical  | 0     |
+| Creativity | 2     |
+| Total      | 5     |
+
+
+As our total Diamonds value is 3, we just multiply this by 5 to get a max health of 15.
+
+#### Sample Level Up
+
+Whenever a character levels up, the player gets 2 points that they can place into any stats. These points can be split should the player want to.

@@ -1,0 +1,42 @@
+# Attributes
+
+## Suit Stats:
+
+### Physical Feats (Diamonds/Pentacles - Autumn)
+---
+	Endurance:	Running a marathon, holding your breath
+	Strength:	Pushing a rock, overpowering an opponent
+	Precision:	Walking a tightrope, picking a lock
+
+	Health: 	Is equal to the net Physical Feat attributes
+
+### Ŝanĝi Lokon (Clubs/Wands - Spring)
+---
+	Endurance:	Maintaining a spell cast
+	Strength:	Casting a lot of magic quickly
+	Precision:	Casting at long ranges with great accuracy
+	
+	Blood:		Is equal to the net Sangi Logon attributes
+
+### Communication (Hearts/Cups - Summer)
+---
+
+	Presence:	Leaving an impression on others. Being able to exert your stance.
+	Deception:	Present falsities as facts
+	Empathy:	Showing you understand others
+	
+	Appearance:	Is dependant on your character race and dressing. Can augment you communication skills
+	
+### Intuition (Spades/Swords - Winter)
+
+<!--
+needs fixing explanations
+-->
+
+---
+	Analytics:	Analyze a problem
+	Practicality:	Using a complex tool, street smarts
+	Creativity:	Novelty, Creation, Expression
+	
+	Memory:		Is equal to the net Intution attributes
+
