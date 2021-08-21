@@ -12,6 +12,7 @@ level = 1
 [output.html]
 theme = "my-theme"
 default-theme = "rust"
+preferred-dark-theme = "rust"
 
 [output.html.search]
 enable = true
