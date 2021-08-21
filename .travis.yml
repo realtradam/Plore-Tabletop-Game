@@ -20,6 +20,9 @@ branches:
   only:
     - master
 
+git:
+  submodules: false
+
 deploy:
   provider: pages
   skip-cleanup: true
