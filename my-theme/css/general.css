@@ -89,7 +89,7 @@ h6:target::before {
     padding: 0 var(--page-padding);
     margin-top: calc(0px - var(--menu-bar-height)); /* Compensate for the #menu-bar-hover-placeholder */
     background-image: url('https://naked.catgirls.rodeo/images/white-parchment-paper-texture-repeating.jpg');
-    background-repeat: repeat-y;
+    background-repeat: both;
     background-position: right top;
 }
 .page-wrapper {
