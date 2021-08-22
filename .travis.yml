@@ -13,12 +13,16 @@ before_script:
   - cargo install-update -a
 
 script:
+  - find ./src -type f \( ! -iname SUMMARY.md \) -exec sed -i '/\[.*]([^\(]*)/ { s/(\//(\/Plore-Tabletop-Game\//g; }' {} \; # Makes deployed urls work with githubpages (under the name Plore-Tabletop-Game)
   - mdbook build #&& mdbook test # In case of custom book path: mdbook build path/to/mybook && mdbook test path/to/mybook
   - cp fonts/* book/fonts
 
 branches:
   only:
     - master
+
+git:
+  submodules: false
 
 deploy:
   provider: pages
