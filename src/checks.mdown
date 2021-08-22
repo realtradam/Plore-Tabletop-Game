@@ -1,0 +1,26 @@
+# Resolving Checks
+
+Generally we have 3 different numbers that we could use:
+- Card Draw
+- Stats
+- Dice Roll
+
+Here are some ways we can do that:
+
+### Stat into card into dice
+
+Stat is how many cards you draw, the highest card number you draw is how many dice your roll.  
+This system seems too multi-stepped and complex.
+
+### Stat into cards diceless variant 2
+
+Stat is how many cards you draw. You can choose which card you want to use for your chosen ability. 
+Could be an interesting idea, you can have something buffed by an odd number for example so if you can draw something odd then it will be strengthened.
+
+### Hand of cards
+
+Players have some amount of cards in their hand. They can then play these cards toward abilities.
+Gives interesting implications for users building the deck, making descisions between what abilities are better.  
+Issues: 
+- would need to determine how to resolve card draw and hand size.
+- need to determine how stats play a role

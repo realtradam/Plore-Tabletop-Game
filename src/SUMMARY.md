@@ -8,6 +8,7 @@
 - [Spellcasting]()
 
 - [Running The Game]()
+	- [Checks](checks.mdown)
 	- [Combat](./combat.mdown)
 	- [Social]()
 		- [Bartering]()
