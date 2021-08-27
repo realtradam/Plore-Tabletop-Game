@@ -6,20 +6,11 @@ Generally we have 3 different numbers that we could use:
 
 Here are some ways we can do that:
 
-### Stat into card into dice
-Stat is how many cards you draw, the highest card number you draw is how many dice your roll.  
-This system seems too multi-stepped and complex.
-
-### Stat into cards diceless variant 2
-Stat is how many cards you draw. You can choose which card you want to use for your chosen ability. 
-Could be an interesting idea, you can have something buffed by an odd number for example so if you can draw something odd then it will be strengthened.
-
-### Hand of cards
-Players have some amount of cards in their hand. They can then play these cards toward abilities.
-Gives interesting implications for users building the deck, making descisions between what abilities are better.  
-Issues: 
-- would need to determine how to resolve card draw and hand size.
-- need to determine how stats play a role
-
 ### Determine Difficulty
-DM dynamically determines difficulty by adding a point for each 'hurdle'. For example if you had to swing a weapon(+1 difficulty) in a tight corridor(+1 difficulty) agaisnt a shielded enemy(+1 difficulty) then the check would have a +3 difficulty. I was thinking to then subtract your relevant stat of the difficulty and then use that result(minimum 0) for resolving.
+GM dynamically determines difficulty by adding a point for each 'hurdle'. For example if you had to swing a weapon(+1 difficulty) in a tight corridor(+1 difficulty) against a shielded enemy(+1 difficulty) then the check would have a +3 difficulty. I was thinking to then subtract your relevant stat of the difficulty and then use that result(minimum 0) for resolving.
+
+- Players first select an appropriate card form their hand to use with an ability they choose.  
+- Then the GM then determines the difficulty, by adding 2 difficulty for each hurdle the player's action has. The GM also announces what happens in a critical failure(usually related to one of the hurdles). Once added up, the player then subtracts their relevant skill(subtract double that amount if it is a relevant career as well).
+- The player can choose to reject doing the action, if they accept then the player rolls 1d6. If the roll is higher then the difficulty rating then the roll passed. If the roll is a 1 then it is a critical failure. If it a match or less then it is a standard failure.
+
+Pick Ability -> Determine Difficulty -> Confirm -> Roll 1d6 -> Play Outcome
