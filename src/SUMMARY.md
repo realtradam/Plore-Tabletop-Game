@@ -1,5 +1,4 @@
 # Summary
-
 [Intro](./intro.mdown)
 
 - [Build Your Character](./character-builder.mdown)
