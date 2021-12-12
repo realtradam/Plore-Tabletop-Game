@@ -7,6 +7,7 @@
 - [Spellcasting]()
 
 - [Running The Game]()
+	- [Fate Deck](fate-deck.mdown)
 	- [Checks](checks.mdown)
 	- [Combat](./combat.mdown)
 	- [Social]()
