@@ -1,16 +1,18 @@
 # Resolving Checks
-Generally we have 3 different numbers that we could use:
-- Card Draw
-- Stats
-- Dice Roll
+When the player attempts to do an action and the GM has determined it is not trivial(e.g failure is possible and not insignificant) the GM should give the player a check which will determine the fate of their action.
 
-Here are some ways we can do that:
+Here is an explanation of each step of a check.
 
-### Determine Difficulty
-GM dynamically determines difficulty by adding a point for each 'hurdle'. For example if you had to swing a weapon(+1 difficulty) in a tight corridor(+1 difficulty) against a shielded enemy(+1 difficulty) then the check would have a +3 difficulty. I was thinking to then subtract your relevant stat of the difficulty and then use that result(minimum 0) for resolving.
+---
 
-- Players first select an appropriate card form their hand to use with an ability they choose.  
-- Then the GM then determines the difficulty, by adding 2 difficulty for each hurdle the player's action has. The GM also announces what happens in a critical failure(usually related to one of the hurdles). Once added up, the player then subtracts their relevant skill(subtract double that amount if it is a relevant career as well).
-- The player can choose to reject doing the action, if they accept then the player rolls 1d6. If the roll is higher then the difficulty rating then the roll passed. If the roll is a 1 then it is a critical failure. If it a match or less then it is a standard failure.
+### 1. Action Request
+Player asks to do an action or ability, naming a relevant discipline and/or object if applicable which would assist them(players are **NOT** to state they are 'using' or 'intending to use' a stat)
 
-Pick Ability -> Determine Difficulty -> Confirm -> Roll 1d6 -> Play Outcome
+### 2. Determine Difficulties and Advantages
+The base point difficulty of a check is 5. Then a GM adds points for each 'hurdle' or two points if the hurdle is especially difficult. For example if you had to swing a weapon in a tight corridor(+1 difficulty) against a shielded enemy(+2 difficulty) then the check would have a +3 difficulty totalling to 8.
+
+However a player will likewise have advantages which will help then succeed. A character may have a discipline or object which is relevant to the check being made at hand. When using an object then the GM will choose to give either a +1 advantage or if the object is particularly effective in this situation may give a +2 advantage instead. Disciplines instead give an advantage equal to the stat relevant to the check being made. Continuing upon the example above the character may be a solider(+3 advantage as they have 3 strength) and using a spear which is effective in corridors(+1 advantage)
+
+### 3. Resolve the Check
+The player resolves the check by drawing or playing a card from their fate deck. If the card is equal or higher then the player's character has succeeded in the check.
+

@@ -1,24 +1,24 @@
 # Summary
 [Intro](./intro.mdown)
 
-- [Build Your Character](character-builder.mdown)
+	- [Build Your Character](character-builder.mdown)
 	- [Attributes](./attributes.mdown)
-	- [Professions](build/professions.mdown)
-	- [Vices](build/vices)
+	- [Disciplines](build/disciplines.mdown)
+- [Vices](build/vices.mdown)
 
 - [Spellcasting]()
 
-- [Running The Game]()
+	- [Running The Game]()
 	- [Fate Deck](fate-deck.mdown)
 	- [Checks](checks.mdown)
 	- [Combat](./combat.mdown)
 	- [Social]()
-		- [Bartering]()
-	- [Travel]()
+	- [Bartering]()
+- [Travel]()
 
-- [Indices]()
+	- [Indices]()
 	- [Weapons]()
 	- [Skills]()
 	- [Spells]()
 	- [Professions]()
-	- [Factions]()
+- [Factions]()
