@@ -2,9 +2,15 @@
 [Intro](./intro.mdown)
 
 - [Build Your Character](character-builder.mdown)
-	- [Attributes](./attributes.mdown)
-	- [Disciplines](build/disciplines.mdown)
-   - [Vices](build/vices.mdown)
+	- [What You Know](build/what-you-know.mdown)
+		- [Disciplines](build/disciplines.mdown)
+		- [Spells & Abilities]()
+	- [What You Are]()
+		- [Vices](build/vices.mdown)
+		- [Races]()
+		- [Attributes](./attributes.mdown)
+	- [What You Have]()
+		- [Gear]()
 
 - [Spellcasting]()
 

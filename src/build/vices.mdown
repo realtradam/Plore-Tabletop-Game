@@ -1,1 +1,6 @@
 # Vices
+Vices are thinks your character is bound and weak to. Deal with the vice to be rewarded, but we weary as if you try to ignore it then it will come back with a vengeance.
+
+When creating a fate deck at the start of a game each player is given a vice card that is shuffled into their deck. This card cannot be discarded by any means except when its respective effect is triggered or when a catharsis token is used. Whenever this card is drawn from the deck its effect is triggered and the player must succumb to their vice in some way that is detrimental to themselves and the party, the intensity determined by the type of card.
+
+This surprise however can be avoided if the player intentionally acts upon the vice or the character copes in some way relating to the vice before this card is drawn. When the player does this then player receives a catharsis token. The next time this character draws a vice card this session they give up the token and in return this makes the vice card count as a wildcard of the respective suit on the card. However if the card is not drawn before the end of a session then the token is discarded. Characters are allowed to carry multiple catharsis tokens and only lose 1 per vice card drawn.
