@@ -23,7 +23,7 @@
 
 - [Indices]()
 	- [Weapons]()
-	- [Skills]()
+	- [Abilities](abilities.mdown)
 	- [Spells]()
 	- [Disciplines]()
 	- [Factions]()
