@@ -18,7 +18,7 @@
 	- [Fate Deck](fate-deck.mdown)
 	- [Checks](checks.mdown)
 	- [Combat](./combat.mdown)
-	- [Social]()
+	- [Social](social.mdown)
 	- [Travel]()
 
 - [Indices]()
