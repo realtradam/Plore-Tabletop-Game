@@ -12,6 +12,7 @@
 	- [What You Have]()
 		- [Gear]()
 			- [Armour](armour.mdown)
+			- [Weapons](weapons.mdown)
 
 - [Spellcasting]()
 
