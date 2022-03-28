@@ -1,0 +1,12 @@
+# Armour
+
+Armour is rated by at least the following: quality, hardiness, block, and damage types.
+
+- **Quality**(points): How far away the armour is from breaking.
+- **Hardiness**(points): How resistant armour is to losing quality.
+- **Block**(points): How much incoming damage.
+- **Damage Types:** Which damage types the armour works against.
+
+Whenever a character wearing armour is damaged that player must draw from the resource deck. If the value drawn is higher then the hardiness value then the attack damages the armour and the quality value is reduced by 1. Once the quality is reduced to 0 then the armour falls apart to pieces and is no longer wearable.
+
+When a character wearing armour is damaged and the damage matches one of the damage types of the armour then the damage is reduced by block value of the armour. If the damage is equal or less then the block value then the character takes no damage.
