@@ -1,0 +1,6 @@
+# Spellcasting
+
+Charaters learn spells that they add to their book.
+They can memorize spells where they don't require their book in their possession.
+
+Any spell they know they can cast however with the penalty of needing a check. Any spell they memorized can be cast without needing this extra check.

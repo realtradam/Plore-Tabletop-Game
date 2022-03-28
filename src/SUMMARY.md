@@ -10,7 +10,7 @@
 		- [Races]()
 		- [Attributes](./attributes.mdown)
 	- [What You Have]()
-		- [Gear]()
+		- [Equipment](equipment.mdown)
 			- [Armour](armour.mdown)
 			- [Weapons](weapons.mdown)
 

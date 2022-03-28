@@ -1,0 +1,24 @@
+# Equipment
+
+## Equipment Types
+
+- Weapons
+- Supplies(consumables)
+- Gear(bedroll, handcuffs, etc)
+- Crafting Materials(herbs, woods, etc)
+- Tools(crowbar, screwdriver, etc)
+
+Bag Slots -> Item Slots -> Items
+
+Bag Slots are how big and how many bags a character can carry, each bag only carries a specific subset of types of items. The Item Slots are how many items the bag can carry.
+
+All characters can carry up to 3 hand held weapons at no additional cost. Each additional weapon takes up a bag slot. Clothing and armour do not take up a slot when worn.
+
+## Bags
+
+Bag | Bag Slots | Item Slots
+---|---|---
+Pouch | 1 | 1
+Satchel | 3 | 4
+KnapSack | 4 | 6
+

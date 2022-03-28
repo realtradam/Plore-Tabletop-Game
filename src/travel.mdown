@@ -1,0 +1,8 @@
+# Travel
+
+## **Brainstorming:**
+Should use some kind of supply system, perhaps a mix of quantum equipment too for some things.
+
+Should also try to get some kind of pack or "set of items" a character could reasonably know to bring, to perhaps what that character would bring according to their disciplines.
+
+1 unit of food required for travelling per day.
