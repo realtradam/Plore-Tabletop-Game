@@ -2,44 +2,38 @@
 
 All attributes are grouped up into 4 distinct groups, each group representing one of the four suits in a tarot deck. Each group contains 3 primary stats, and 1 derivative stat that is calculated based on other factors.
 
-## Suit Stats:
+## Stats:
 
-### Physical Feats (Diamonds/Pentacles - Autumn)
----
+### Fitness
+`Spend 6, minimum 1 each`
+
 	Endurance:	Running a marathon, holding your breath
 	Strength:	Pushing a rock, overpowering an opponent
 	Precision:	Walking a tightrope, picking a lock
 
-	Health: 	Is equal to the net Physical Feat attributes
-
-### Ŝanĝi Lokon (Clubs/Wands - Spring)
 ---
+### Magic
+`Spend 6, minimum 1 each`
+
 	Endurance:	Maintaining a spell cast
 	Strength:	Casting a lot of magic quickly
 	Precision:	Casting at long ranges with great accuracy
-	
-	Blood:		Is equal to the net Sangi Logon attributes
 
-### Communication (Hearts/Cups - Summer)
 ---
+### Body  
+`Spend 12, minimum 1 each`  
 
-	Presence:	Inspire confidence in others toward you.
-	Deception:	Lying to someone
-	Empathy:	Asking somone to help you.
+	Health: 	How much damage one can take before being downed
+	Blood:		Consumed some spells, some attacks, and when one is downed. You die when it reaches 0
+	
+---
+### Memory
+`Start with 1`
+
+	Memory:		How much powerful knowledge you can keep
+
+---
 	
 	Appearance:	Is dependant on your character race and dressing. Can augment you communication skills
-	
-### Intuition (Spades/Swords - Winter)
-
-<!--
-needs fixing explanations
--->
-
----
-	Analytics:	Determine how to disable a trap.
-	Practicality:	Crafting a trap.
-	Creativity:	Modifying a trap with custom parts.
-	
-	Memory:		Is equal to the net Intution attributes
 
 

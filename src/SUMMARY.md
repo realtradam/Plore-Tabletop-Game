@@ -7,7 +7,7 @@
 		- [Spells & Abilities]()
 	- [What You Are]()
 		- [Vices](build/vices.mdown)
-		- [Races]()
+		- [Races](./races.mdown)
 		- [Attributes](./attributes.mdown)
 	- [What You Have]()
 		- [Gear]()
@@ -24,7 +24,7 @@
 	- [Travel]()
 
 - [Indices]()
-	- [Weapons]()
+	- [Weapons](./weapons.mdown)
 	- [Abilities](abilities.mdown)
 	- [Spells]()
 	- [Disciplines]()

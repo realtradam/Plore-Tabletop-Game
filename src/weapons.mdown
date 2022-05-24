@@ -2,14 +2,43 @@
 
 Weapons are a special item type which grant character abilities that can be used when the weapon is wielded. Weapons also have various properties which affect your character in combat. Some of these are listed below. When the attack is possible to make, only ranged weapons, improvised weapons, or weapon attacks that specify require a check to see if the attack hits. Otherwise the weapon will automatically hit your target.
 
-## Improvised Weapons
-Any item, including items already classified as a weapon, can make an improvised weapon attack. Improvised weapon attacks use either your strength or your precision to determine how much damage they deal, depending on how the weapon would be used.  Improvised weapons must also pass a check in order to determine if the attack lands. The GM may also impose other traits onto the improvised weapon depending on what weapon is being used, for example a character using a chair to attack might only have one or two attacks before the chair falls apart(TODO: get a better example).
-
 #### Unarmed Punches and Kicks
-Punches and kicks are considered improvised weapons where the player may choose to use their strength or precision. Punches and kicks deal fatigue damage, meaning they are non-lethal.
+Punches, Kicks, and weapon bunts deal 1 blunt damage.
 
-## Ranged Attacks
-Any ranged weapon attack requires a check to determine if the attack lands. The further the attack, the harder the check should be, likewise if the enemy is too close the attack should also have a disadvantage.
+# Weapon Items
 
-## Casting Weapons
-Some weapons allow you to cast magic.
+## Dagger
+Activatable(1 Energy): Deal 2 piercing damage.
+Ability(Odd): Refresh this weapon. You can use this an amount of times equal to your Fitness Precision. If you are wielding this in your off hand then the cost is an Even instead.
+
+## Long Sword
+Activatable(Swords or Pentacles, 2 Energy): Deal 2 slashing damage + your Fitness Strength.
+
+## Spear
+Activatable(Cups or Wands, 2 Energy): Deal 2 piercing damage + your Fitness Precision.
+
+## Mace
+Activatable(Swords or Pentacles, 2 Energy): Deal blunt damage equal to your Fitness Strength.
+Activatable(Swords or Pentacles, 3 Energy): Deal blunt damage equal to double your Fitness Strength.
+
+## Axe
+Activatable(Cups or Wands, 2 Energy): Deal slashing damage equal to your Fitness Strength.
+Activatable(Cups or Wands, 3 Energy): Deal slashing damage equal to double your Fitness Strength.
+
+## Staff
+Activatable(2 Energy, Swords or Pentacles): Deal damage equal to your Fitness Precision.
+Ability(Cups or Wands or Pentacles, 1 Energy): Block 1 damage of Slashing or Piercing or Blunt depending on the type of card played respectively.
+
+## Crossbow
+Ability(1 Loaded-Arrow, 1 Energy, Even): Deal damage of ammo loaded in + your Fitness Precision.
+Activatable(Arrow, 2 Energy): Load an arrow into this Crossbow.
+
+## Whip
+Activatable(2 Energy, Wands): Attempt to make an enemy drop their weapon. <!-- cant be guranteed success? -->
+Activatable(2 Energy, Swords): Deal Slashing damage equal to your Fitness Precision.
+
+## Caestus
+Passive: Fists deal 2 additional damage.
+
+
+
