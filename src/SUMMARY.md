@@ -21,7 +21,7 @@
 	- [Checks](checks.mdown)
 	- [Combat](./combat.mdown)
 	- [Social](social.mdown)
-	- [Travel]()
+	- [Travel](travel.mdown)
 
 - [Indices]()
 	- [Weapons](./weapons.mdown)

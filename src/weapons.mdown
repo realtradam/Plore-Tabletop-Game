@@ -34,7 +34,8 @@ Ability(1 Loaded-Arrow, 1 Energy, Even): Deal damage of ammo loaded in + your Fi
 Activatable(Arrow, 2 Energy): Load an arrow into this Crossbow.
 
 ## Whip
-Activatable(2 Energy, Wands): Attempt to make an enemy drop their weapon. <!-- cant be guranteed success? -->
+o
+Activatable(2 Energy, Wands): Attempt to make an enemy drop their weapon. <!-- cant be guaranteed success? -->
 Activatable(2 Energy, Swords): Deal Slashing damage equal to your Fitness Precision.
 
 ## Caestus
