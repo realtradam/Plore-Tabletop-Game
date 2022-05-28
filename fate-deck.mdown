@@ -1,0 +1,8 @@
+# Fate Deck
+
+The fate deck is a single playing card deck which is used by all the players of the game to build their respective deck. The cards from this deck are used by players to do actions or abilities of their characters. The players individual decks are rebuilt every once in a while.[TODO: how often?]
+
+## Building the Fate Decks
+
+The GM separates the face cards from the fate deck(kings, queens, jacks and aces). These face cards are then shuffled and one is dealt out to each player. The remaining numbered cards are then selected according to each players respective character's rules for selecting fate cards. Once selected the remaining numbered cards are shuffled and dealt out evenly among the players. Finally any relevant character abilities for further modifying the player Fate Decks are put into play. Once this is done the player Fate Decks are ready for play.
+
