@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Build Your Character - Plore Tabletop Roleplaying Game</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "rust" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Intro</a></li><li class="chapter-item expanded "><a href="character-builder.html" class="active"><strong aria-hidden="true">1.</strong> Build Your Character</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="build/what-you-know.html"><strong aria-hidden="true">1.1.</strong> What You Know</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="build/disciplines.html"><strong aria-hidden="true">1.1.1.</strong> Disciplines</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.1.2.</strong> Spells & Abilities</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.2.</strong> What You Are</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="build/vices.html"><strong aria-hidden="true">1.2.1.</strong> Vices</a></li><li class="chapter-item "><a href="races.html"><strong aria-hidden="true">1.2.2.</strong> Races</a></li><li class="chapter-item "><a href="attributes.html"><strong aria-hidden="true">1.2.3.</strong> Attributes</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.3.</strong> What You Have</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.3.1.</strong> Gear</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="armour.html"><strong aria-hidden="true">1.3.1.1.</strong> Armour</a></li><li class="chapter-item "><a href="weapons.html"><strong aria-hidden="true">1.3.1.2.</strong> Weapons</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Spellcasting</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Running The Game</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="fate-deck.html"><strong aria-hidden="true">3.1.</strong> Fate Deck</a></li><li class="chapter-item expanded "><a href="checks.html"><strong aria-hidden="true">3.2.</strong> Checks</a></li><li class="chapter-item expanded "><a href="combat.html"><strong aria-hidden="true">3.3.</strong> Combat</a></li><li class="chapter-item expanded "><a href="social.html"><strong aria-hidden="true">3.4.</strong> Social</a></li><li class="chapter-item expanded "><a href="travel.html"><strong aria-hidden="true">3.5.</strong> Travel</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Indices</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="weapons.html"><strong aria-hidden="true">4.1.</strong> Weapons</a></li><li class="chapter-item expanded "><a href="abilities.html"><strong aria-hidden="true">4.2.</strong> Abilities</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> Spells</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.</strong> Disciplines</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.5.</strong> Factions</div></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Plore Tabletop Roleplaying Game</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="build-your-character"><a class="header" href="#build-your-character">Build Your Character</a></h1>
+<p>In the world of Plore, the fates of travellers is intertwined. If you wish to survive you will best remember to work together and prop each others capabilities up, lest you shall all perish alone. Create your characters together such that their stories and personalities will tend to work together rather then clash.</p>
+<p>Characters consist of 3 core descriptors:</p>
+<ol>
+<li>Something you know
+<ul>
+<li>Disciplines</li>
+<li>Spells &amp; Abilities</li>
+</ul>
+</li>
+<li>Something you are
+<ul>
+<li>Vices</li>
+<li>Race</li>
+<li>Attributes</li>
+</ul>
+</li>
+<li>Something you have
+<ul>
+<li>Gear</li>
+</ul>
+</li>
+</ol>
+<p>This page will give you a simple sample character creation example to show step by step how a character is made, while the following pages explain in detail each step of the character creation process.</p>
+<h4 id="sample-character-creation"><a class="header" href="#sample-character-creation">Sample Character Creation</a></h4>
+<h3 id="disciplines-and-vices"><a class="header" href="#disciplines-and-vices">Disciplines and Vices</a></h3>
+<p>First you should select 1 or 2 disciplines your character has undertaken in their life. Disciplines will give you advantages when rolling for checks that could reasonable fall under ypur chosen disciplines. Vices however will do the opposite, they will cause increased difficulty accomplishing checks related to them. Outside of these mechanics your should keep in mind to play ypur chracter in a way that would make sense goven these choices. Characters should be tempting for their characters rather then just avoiding them for the sake of avoiding the disadvantage it imposes.</p>
+<h3 id="stat-distribution"><a class="header" href="#stat-distribution">Stat distribution</a></h3>
+<p>You have 6 points to spend in each suit of skills for an initial total of 24 points however you like with the following restrictions:</p>
+<ol>
+<li>You may not allot more then 5 points into a any stat</li>
+<li>You may not allot less then 1 point into any stat</li>
+</ol>
+<p>Once these points are alloted you have 3 more points to spend in any way you see fit such that they still follow the above 2 restrictions resulting in a final total of 27 points.</p>
+<!--Once you have a character in mind you can begin building their stats. You have 6 points to spend in each suit of skills to spend however you like. this is a total of 12 points(3 for diamonds, 3 for hearts, etc). Once this is done you have 2 more points you can spend in such a way they the 2 points are not spent on the same suit of skills.-->
+<p>Here is an example of a stat distribution. 6 points are assigned to each suit, and then 3 more points are added afterwords to the spades suit.</p>
+<div class="table-wrapper"><table><thead><tr><th>Diamonds</th><th>Value</th></tr></thead><tbody>
+<tr><td>Endurance</td><td>1</td></tr>
+<tr><td>Strength</td><td>3</td></tr>
+<tr><td>Precision</td><td>2</td></tr>
+<tr><td><strong>Total(Health)</strong></td><td><strong>6</strong></td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th>Clubs</th><th>Value</th></tr></thead><tbody>
+<tr><td>Endurance</td><td>2</td></tr>
+<tr><td>Strength</td><td>2</td></tr>
+<tr><td>Precision</td><td>2</td></tr>
+<tr><td><strong>Total(Blood)</strong></td><td><strong>6</strong></td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th>Hearts</th><th>Value</th></tr></thead><tbody>
+<tr><td>Presence</td><td>1</td></tr>
+<tr><td>Deception</td><td>4</td></tr>
+<tr><td>Empathy</td><td>1</td></tr>
+<tr><td><strong>Total(Presentation)</strong></td><td><strong>6</strong></td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th>Spades</th><th>Value</th></tr></thead><tbody>
+<tr><td>Analytics</td><td>5</td></tr>
+<tr><td>Practical</td><td>2</td></tr>
+<tr><td>Creativity</td><td>2</td></tr>
+<tr><td><strong>Total(Memory)</strong></td><td><strong>9</strong></td></tr>
+</tbody></table>
+</div><!-- As our total Diamonds value is 3, we just multiply this by 5 to get a max health of 15. -->
+<h4 id="level-up"><a class="header" href="#level-up">Level Up</a></h4>
+<p>Character attributes do not change when characters level up. Instead character gain other benefits on level up.</p>
+<!-- #### Sample Level Up -->
+<!-- Whenever a character levels up, the player gets 2 points that they can place into any stats. Like when you spent the 2 points on character creation these points must spent on two skills from different suits. -->
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="build/what-you-know.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="build/what-you-know.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
