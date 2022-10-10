@@ -18,3 +18,26 @@ Regain all energy and draw a card from the player deck. During their turn player
 ## Enemy Turn
 
 The GM resolved the enemy effects in any order they wish. Any enemy that was not targeted this round by a player attack deals damage to a player of the GMs choice equal to the enemy's attack stat. Once all of these are resolve then the enemy turn ends.
+
+--- 
+
+Each round will consist of the following flow:
+
+Melee -> Ranged -> Magic
+
+At any point before or after an action a character could move(might not have movement?)
+Within each of those phases the order goes like this:
+
+Enemy intention -> Player actions(any order) -> enemy actions
+
+---
+
+Magic always hits but damage is unpredictable(roll for damage)
+Physical can sometimes miss(roll for hit) but has consistant damage
+
+---
+
+A combat game will be structured in a way inspired by binding of issac board game
+
+Player card vs enemy cards.
+The location the players are in will determine what doodads are availible (doodads are things like furniture)
