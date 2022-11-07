@@ -10,6 +10,9 @@ Players can play 1 free card, and can tap any of their cards for free on their t
 
 Players have blood tokens. These are flipped when the player takes a killing blow or casts spells. Players die when they are all flipped.
 
+Melee attacks subject to a reposte. If you miss your attack the enemy automatically does a reposte if they have one.
+When using a ranged weapon, you cannot use it to attack any enemy that attacked and hit you with a melee attack since your last turn.
+
 ## Types of cards:
 
 ### Tarot Cards
