@@ -2,6 +2,14 @@
 
 Big rework going to happen. I want to use custom cards instead.
 
+Players race card has 2 abilities:
+Tap to play a card
+Unique race ability
+
+Players can play 1 free card, and can tap any of their cards for free on their turn or in reaction
+
+Players have blood tokens. These are flipped when the player takes a killing blow or casts spells. Players die when they are all flipped.
+
 ## Types of cards:
 
 ### Tarot Cards
