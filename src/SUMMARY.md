@@ -14,7 +14,7 @@
 			- [Armour](armour.md)
 			- [Weapons](weapons.md)
 
-- [Spellcasting]()
+- [Spellcasting](Spellcasting.md)
 
 - [Running The Game]()
 	- [Fate Deck](fate-deck.md)
