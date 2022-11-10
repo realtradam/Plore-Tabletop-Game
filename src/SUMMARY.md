@@ -17,10 +17,10 @@
 - [Spellcasting](Spellcasting.md)
 
 - [Running The Game]()
-	- [Fate Deck](fate-deck.md)
-	- [Checks](checks.md)
 	- [Combat](./combat.md)
 	- [Social](social.md)
+	- [Checks](checks.md)
+	- [Fate Deck](fate-deck.md)
 	- [Travel](travel.md)
 
 - [Indices]()
