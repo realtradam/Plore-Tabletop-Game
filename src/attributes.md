@@ -4,7 +4,7 @@ All attributes are grouped up into 4 distinct groups, each group representing on
 
 ## Innate Stats:
 	stats chosen at the start that dont change
-	For new characters: 16 stat points. max 5 min 1
+	For new characters: [4, 3, 3, 2, 2, 1]
 
 ### Fitness
 
@@ -21,7 +21,7 @@ All attributes are grouped up into 4 distinct groups, each group representing on
 ---
 ## Derived Stats
 	stats derived from the innate stats 
-**Health**(End+Res): 		How much damage one can take before being downed.
+**Health**((End+Res)x2): 		How much damage one can take before being downed.
 **Blood**(Str+Wis):			Consumed some spells, some attacks, and when one is downed. You die when it reaches 0.
 **Memory**(Pre+Per):		How much powerful knowledge you can keep.
 

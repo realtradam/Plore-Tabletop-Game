@@ -37,8 +37,14 @@ class Card
             rule 'p' do
               margin 0
             end
+            rule 'button' do
+              font size: 50.px
+              padding 30.px
+              margin 30.px
+            end
             rule '.card_wrapper' do
-              width (825 * 4).px
+              min height: (1425 * 2).px
+              width (825 * 7).px
               display :flex
               flex wrap: :wrap
               height 100.%
@@ -139,7 +145,7 @@ class Card
               font size: 50.px
               display :flex
               justify content: 'flex-start'
-              gap 15.px
+              gap 5.px
               text align: :left
               padding '35px 30px 30px 30px'
               flex direction: :column
@@ -223,7 +229,10 @@ class Card
             end
           end
         end
-      _.div.card_wrapper do
+      _.button onclick: "downloadAsImage()" do
+        "Download"
+      end
+      _.div.card_wrapper.card_wrapper! do
         cards.each do |card|
           _.div.card(style: "background:linear-gradient(225deg, rgba(0,0,0,1) -50%, #{card.color} 100%)") do
             _.div.group do
@@ -330,6 +339,17 @@ class Card
             end
           end
         end
+      end
+      _.script src: "./web/bundle.js"
+      _.script do
+        <<-SCRIPT
+function downloadAsImage() {
+  htmlToImage.toPng(document.getElementById('card_wrapper'))
+    .then(function (dataUrl) {
+      download(dataUrl, 'card_wrapper.png');
+    });
+}
+        SCRIPT
       end
       end
     end

@@ -94,7 +94,7 @@
 				font-size: 50px;
 				display: flex;
 				justify-content: flex-start;
-				gap: 15px;
+				gap: 5px;
 				text-align: left;
 				padding: 35px 30px 30px 30px;
 				flex-direction: column;
@@ -198,97 +198,38 @@
 				display: flex;
 			}
 			.card_wrapper {
-				width: 3300px;
+				min-height: 2850px;
+				width: 5775px;
 				display: flex;
 				flex-wrap: wrap;
 				height: 100%;
+			}
+			button {
+				font-size: 50px;
+				padding: 30px;
+				margin: 30px;
 			}
 			p {
 				margin: 0;
 			}
 		</style>
 	</head>
-	<div class="card_wrapper">
-		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, firebrick 100%)" class="card">
-			<div class="group">
-				<div class="title">
-					<div class="attrib_icon attrib_tr">
-						1 🩸
-					</div>
-					<p>
-						Wispy Flame
-					</p>
-				</div>
-				<div class="content">
-					<div class="action">
-						<div class="symbol_wrapper_outer">
-							<div class="symbol_wrapper_inner">
-								<span class="icon suit_icon spades_icon">
-									♠️
-								</span>
-							</div>
-							<div class="action_detail">
-								<p>(<strong>even</strong>) Deal melee 🎲 <strong>d4 damage</strong>. If it is a small object set it on fire.</p>
-							</div>
-						</div>
-					</div>
-					<div class="flavour_wrapper">
-						<div class="flavour">
-							<hr>
-							<p>“Portable Candle”</p>
-						</div>
-					</div>
-				</div>
-				<div class="card_type">
-					Blood Magic
-				</div>
-			</div>
-		</div>
-		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, firebrick 100%)" class="card">
-			<div class="group">
-				<div class="title">
-					<div class="attrib_icon attrib_tr">
-						1 🩸
-					</div>
-					<p>
-						Summon Flesh
-					</p>
-				</div>
-				<div class="content">
-					<div class="action">
-						<div class="symbol_wrapper_outer">
-							<div class="symbol_wrapper_inner">
-								<span class="icon suit_icon hearts_icon">
-									♥️
-								</span>
-							</div>
-							<div class="action_detail">
-								<p>(<strong>5 or less</strong>) Heal a target within arms reach equal to the card played.</p>
-							</div>
-						</div>
-					</div>
-					<div class="action">
-						<hr>
-						<p>If this spell heals for more then half of the target’s max health then they get flesh mass disease.</p>
-					</div>
-					<div class="flavour_wrapper">
-						<div class="flavour">
-							<hr>
-							<p>“Writhing flesh mass that assimilates”</p>
-						</div>
-					</div>
-				</div>
-				<div class="card_type">
-					Blood Magic
-				</div>
-			</div>
-		</div>
+	<button onclick="downloadAsImage()">
+		Download
+	</button>
+	<div id="card_wrapper" class="card_wrapper">
 		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
 			<div class="group">
 				<div class="title">
 					<p>
-						Slingshot
+						Thrusting Sword
 					</p>
+					<div class="attrib_icon attrib_bl">
+						⚔️ 5
+					</div>
+					<div class="attrib_icon attrib_br">
+						Pre 🎲
+					</div>
 				</div>
 				<div class="content">
 					<div class="action">
@@ -299,18 +240,18 @@
 								</span>
 							</div>
 							<div class="action_detail">
-								<p>Attack with a 🎲 <strong>d6</strong> roll. On success deal ⚔️ <strong>Prescision damage</strong>.</p>
+								<p>🎲 <strong>d6 + Prescision</strong> to hit.</p>
 							</div>
 						</div>
 					</div>
 					<div class="action">
 						<hr>
-						<p>Ranged: This weapon avoids melee reposte attacks.</p>
+						<p><strong>Opportune Strike</strong>: When targeting an enemy with this weapon, mark them until the end of their turn. While marked if they attack somone other then you then you can perform a reposte on them.</p>
 					</div>
 					<div class="flavour_wrapper">
 						<div class="flavour">
 							<hr>
-							<p>“Only a troublemaker would use this.”</p>
+							<p>“World Famous Iron Toothpick”</p>
 						</div>
 					</div>
 				</div>
@@ -319,5 +260,292 @@
 				</div>
 			</div>
 		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Spear
+					</p>
+					<div class="attrib_icon attrib_bl">
+						⚔️ 4
+					</div>
+					<div class="attrib_icon attrib_br">
+						Str 🎲
+					</div>
+				</div>
+				<div class="content">
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>🎲 <strong>d6 + (Prescision or Strength)</strong> to hit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<hr>
+						<p><strong>Reach</strong>: When making an attack, you ignore repostes from your target.</p>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“Getting up close and personal while staying far away”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Dagger
+					</p>
+					<div class="attrib_icon attrib_bl">
+						⚔️ 3
+					</div>
+					<div class="attrib_icon attrib_br">
+						Pre 🎲
+					</div>
+				</div>
+				<div class="content">
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>🎲 <strong>d6 + (Prescision or Strength)</strong> to hit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<hr>
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon suit_icon spades_icon">
+									♠️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>(even) <strong>Swift Attack</strong>: Refresh this card.</p>
+							</div>
+						</div>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“A quick and convinient way to turn a spleen into a sheath”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Bow
+					</p>
+					<div class="attrib_icon attrib_bl">
+						⚔️ 5
+					</div>
+				</div>
+				<div class="content">
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>🎲 <strong>d8 + Prescision</strong> to hit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<hr>
+						<p><strong>Ranged</strong>: When making an attack, you ignore repostes from your target.</p>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“One stringed instrument that got repurposed as a weapon.”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Crossbow
+					</p>
+					<div class="attrib_icon attrib_bl">
+						⚔️ 7
+					</div>
+				</div>
+				<div class="content">
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>(must be loaded) 🎲 <strong>d6 + Prescision</strong> to hit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<hr>
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p><strong>Reload</strong>: Load this weapon.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<hr>
+						<p><strong>Ranged</strong>: When making an attack, you ignore repostes from your target.</p>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“No one will cross you with this weapon”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Warhammer
+					</p>
+				</div>
+				<div class="content">
+				</div>
+				<div class="card_type">
+					Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Straight Sword
+					</p>
+				</div>
+				<div class="content">
+				</div>
+				<div class="card_type">
+					Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Axe
+					</p>
+				</div>
+				<div class="content">
+				</div>
+				<div class="card_type">
+					Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Staff
+					</p>
+				</div>
+				<div class="content">
+				</div>
+				<div class="card_type">
+					Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Curved Sword
+					</p>
+				</div>
+				<div class="content">
+				</div>
+				<div class="card_type">
+					Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, DarkBlue 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Caestus
+					</p>
+				</div>
+				<div class="content">
+					<div class="action">
+						<p>While equipped: Unarmed Strikes deal <strong>Strength</strong> additional damage.</p>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“Weapon of choice for a fit bronze statue”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Equipment
+				</div>
+			</div>
+		</div>
 	</div>
+	<script src="./web/bundle.js">
+	</script>
+	<script>
+		function downloadAsImage() {
+		  htmlToImage.toPng(document.getElementById('card_wrapper'))
+		    .then(function (dataUrl) {
+		      download(dataUrl, 'card_wrapper.png');
+		    });
+		}
+	</script>
 </html>
