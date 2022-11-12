@@ -16,6 +16,42 @@ class Card
     @actions ||= []
   end
 
+  def initialize(
+    title:,
+    color:,
+    attrib_top_right: nil,
+    attrib_top_right_icon: '🩸',
+    blood: nil,
+    attrib_top_left: nil,
+    attrib_top_left_icon: '🛡️',
+    attrib_bottom_right: nil,
+    attrib_bottom_right_icon: '🎲',
+    reposte: nil,
+    attrib_bottom_left: nil,
+    attrib_bottom_left_icon: '⚔️',
+    damage: nil,
+    actions: [],
+    flavour: nil,
+    type: nil
+  )
+    attrib_top_right ||= blood.to_s unless blood.nil?
+    attrib_bottom_right ||= reposte.to_s unless reposte.nil?
+    attrib_bottom_left ||= damage.to_s unless damage.nil?
+    self.title = title
+    self.color = color
+    self.attrib_top_left = attrib_top_left
+    self.attrib_top_left_icon = attrib_top_left_icon
+    self.attrib_top_right = attrib_top_right
+    self.attrib_top_right_icon = attrib_top_right_icon
+    self.attrib_bottom_right = attrib_bottom_right
+    self.attrib_bottom_right_icon = attrib_bottom_right_icon
+    self.attrib_bottom_left = attrib_bottom_left
+    self.attrib_bottom_left_icon = attrib_bottom_left_icon
+    self.actions.push *actions
+    self.flavour = flavour
+    self.type = type
+  end
+
   class Action
     attr_accessor :content, :symbol, :seperator
 
@@ -31,9 +67,9 @@ class Card
       Paggio.html do |_|
         _.head do
           _.style do
-            #rule 'body' do
-            #  height 100.%
-            #end
+            rule 'body' do
+              background color: '#1e1e1e'
+            end
             rule 'p' do
               margin 0
             end

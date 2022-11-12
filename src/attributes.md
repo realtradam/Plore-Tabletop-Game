@@ -5,6 +5,19 @@ All attributes are grouped up into 4 distinct groups, each group representing on
 ## Innate Stats:
 	stats chosen at the start that dont change
 	For new characters: [4, 3, 3, 2, 2, 1]
+| Score | Cost |
+| -- | -- |
+| 1 | 0 |
+| 2 | 1 |
+| 3 | 3 |
+| 4 | 5 |
+
+<!--
+(5, 5, 3, 0, 0, 0)
+(5, 5, 1, 1, 1, 0)
+(5, 3, 3, 1, 1, 0)
+(3, 3, 3, 3, 1, 0)
+-->
 
 ### Fitness
 
@@ -16,7 +29,7 @@ All attributes are grouped up into 4 distinct groups, each group representing on
 
 **Resolve**:			Facing fears or great pain(Maintaining a spell cast)
 **Wisdom**:			Applying Knowledge(Casting a large volume of magic quickly)
-**Perception**:	Noticing details or the big picture(Casting at long ranges with great accuracy)
+**Perception**:	Noticing details, the big picture(Casting at long ranges with great accuracy)
 
 ---
 ## Derived Stats
