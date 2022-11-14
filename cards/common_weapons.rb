@@ -1,8 +1,8 @@
 load 'card.rb'
 
-cards = []
+common_weapons = {}
 
-cards.push Card.new(
+common_weapons[:thrusting_sword] = Card.new(
   title: "Thrusting Sword",
   color: 'rebeccapurple',
   reposte: 'Prc',
@@ -22,11 +22,11 @@ cards.push Card.new(
 )
 
 
-cards.push Card.new(
-  title: "Spear",
+common_weapons[:polearm] = Card.new(
+  title: "Polearm",
   color: 'rebeccapurple',
   reposte: 'Str',
-  damage: '2',
+  damage: '3',
   actions: [
     Card::Action.new(
       content: '🎲 **d6 + Str** to hit.',
@@ -34,17 +34,16 @@ cards.push Card.new(
     ),
     Card::Action.new(
       seperator: true,
-      content: '**Reach**: When making an attack, you ignore repostes from your target.',
+      content: '**Reach**: When making an attack, you ignore repostes from your target unless they also have Reach.',
       # TODO: this is the same as the bow making it superiour
       #symbol: :spades,
     ),
   ],
   flavour: '"Getting up close and personal while staying far away"',
-  type: 'Spear Weapon'
+  type: 'Polearm Weapon'
 )
 
-
-cards.push Card.new(
+common_weapons[:dagger] = Card.new(
   title: "Dagger",
   color: 'rebeccapurple',
   reposte: 'Prc',
@@ -64,7 +63,7 @@ cards.push Card.new(
   type: 'Dagger Weapon'
 )
 
-cards.push Card.new(
+common_weapons[:bow] = Card.new(
   title: "Bow",
   color: 'rebeccapurple',
   damage: '3',
@@ -83,7 +82,7 @@ cards.push Card.new(
   type: 'Bow Weapon'
 )
 
-cards.push Card.new(
+common_weapons[:crossbow] = Card.new(
   title: "Crossbow",
   color: 'rebeccapurple',
   damage: '4',
@@ -107,7 +106,7 @@ cards.push Card.new(
   type: 'Crossbow Weapon'
 )
 
-cards.push Card.new(
+common_weapons[:hammer] = Card.new(
   title: "Hammer",
   reposte: 'Str',
   damage: 3,
@@ -127,7 +126,7 @@ cards.push Card.new(
   type: 'Hammer Weapon'
 )
 
-cards.push Card.new(
+common_weapons[:straight_sword] = Card.new(
   title: "Straight Sword",
   damage: 3,
   reposte: 'Str',
@@ -147,7 +146,7 @@ cards.push Card.new(
   type: 'Straight Sword Weapon'
 )
 
-cards.push Card.new(
+common_weapons[:axe] = Card.new(
   title: "Axe",
   damage: 3,
   reposte: 'Str',
@@ -167,7 +166,7 @@ cards.push Card.new(
   type: 'Axe Weapon',
 )
 
-cards.push Card.new(
+common_weapons[:staff] = Card.new(
   title: "Staff",
   damage: 2,
   reposte: 'Str',
@@ -192,7 +191,7 @@ cards.push Card.new(
   type: 'Staff Weapon',
 )
 
-cards.push Card.new(
+common_weapons[:curved_sword] = Card.new(
   title: "Curved Sword",
   damage: 3,
   reposte: 'Prc',
@@ -212,7 +211,7 @@ cards.push Card.new(
   type: 'Curved Sword Weapon',
 )
 
-cards.push Card.new(
+common_weapons[:caestus] = Card.new(
   title: "Caestus",
   color: 'DarkBlue',
   actions: [
@@ -224,4 +223,39 @@ cards.push Card.new(
   type: 'Weapon Equipment'
 )
 
-File.write('card.html', Card.build(cards))
+common_weapons[:test_weapon] = Card.new(
+  title: "Test Weapon",
+  damage: 3,
+  reposte: 'Prc',
+  actions: [
+    Card::Action.new(
+      content: '🎲 **d6 + Prc** to hit.',
+      symbol: :spades,
+    ),
+    Card::Action.new(
+      seperator: true,
+      content: '🎲 **d6 + Prc** to hit.',
+      symbol: :clubs,
+    ),
+    Card::Action.new(
+      seperator: true,
+      content: '🎲 **d6 + Prc** to hit.',
+      symbol: :diamonds,
+    ),
+    Card::Action.new(
+      seperator: true,
+      content: '🎲 **d6 + Prc** to hit.',
+      symbol: :joker,
+    ),
+    Card::Action.new(
+      seperator: true,
+      content: '🎲 **d6 + Prc** to hit.',
+      symbol: [:tap, :hearts]
+    ),
+  ],
+  color: 'rebeccapurple',
+  flavour: '"Arrr"',
+  type: 'Curved Sword Weapon',
+)
+
+File.write('common_weapons.html', Card.build(common_weapons.values))

@@ -1,4 +1,5 @@
 # Summary
+
 [Intro](./intro.md)
 
 - [Build Your Character](character-builder.md)
@@ -14,14 +15,15 @@
 			- [Armour](armour.md)
 			- [Weapons](weapons.md)
 
-- [Spellcasting](Spellcasting.md)
-
 - [Running The Game]()
-	- [Combat](./combat.md)
-	- [Social](social.md)
-	- [Checks](checks.md)
-	- [Fate Deck](fate-deck.md)
-	- [Travel](travel.md)
+	- [Checks](running-the-game/checks.md)
+	- [Abilities](running-the-game/abilities.md)
+		- [Attacking](running-the-game/weapons.md)
+		- [Spellcasting](running-the-game/spellcasting.md)
+	- [Combat](running-the-game/combat.md)
+	- [Social](running-the-game/social.md)
+	- [Fate Deck](running-the-game/fate-deck.md)
+	- [Travel](running-the-game/travel.md)
 
 - [Indices]()
 	- [Weapons](./weapons.md)

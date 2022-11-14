@@ -1,89 +1,96 @@
 load 'card.rb'
 
-cards = []
+beginner_spells = {}
 
-card = Card.new
-card.title = "Wispy Flame"
-card.color = 'firebrick'
-
-card.attrib_top_right = '1'
-card.attrib_top_right_icon = '🩸'
-
-#card.attrib_top_right = '2'
-#card.attrib_top_right_icon = '🛡️'
-
-#card.attrib_bottom_right = '1'
-#card.attrib_bottom_right_icon = '🎲'
-
-#card.attrib_bottom_left = '1'
-#card.attrib_bottom_left_icon = '⚔️'
-
-card.actions.push Card::Action.new(
-  content: '(**even**) Deal melee 🎲 **d4 damage**. If it is a small object set it on fire.',
-  symbol: :spades,
+beginner_spells[:wispy_flame] = Card.new(
+  title: "Wispy Flame",
+  damage: 'd4',
+  blood: 1,
+  #reposte: 'Prc',
+  actions: [
+    Card::Action.new(
+      content: '(**even**) Engulf your hand in flames for short while. You need to maintain concentration.',
+      symbol: [:clubs, :blood]
+    ),
+    Card::Action.new(
+      seperator: true,
+      content: '(**while concentrating**) Deal melee damage to a target with your flame engulfed hand. If the target is a small object set it on fire.',
+      symbol: [:tap]
+    ),
+  ],
+  color: 'firebrick',
+  flavour: '"Portable Candle"',
+  type: 'Blood Magic (Igneous)'
 )
-card.flavour = '"Portable Candle"'
-card.type = 'Blood Magic'
 
-cards.push card
 
-card = Card.new
-card.title = "Summon Flesh"
-card.color = 'firebrick'
-
-card.attrib_top_right = '1'
-card.attrib_top_right_icon = '🩸'
-
-#card.attrib_top_right = '2'
-#card.attrib_top_right_icon = '🛡️'
-
-#card.attrib_bottom_right = '2'
-#card.attrib_bottom_right_icon = '🎲'
-
-#card.attrib_bottom_left = '1'
-#card.attrib_bottom_left_icon = '⚔️'
-
-card.actions.push Card::Action.new(
-  content: '(**5 or less**) Heal a target within arms reach equal to the card played.',
-  symbol: :hearts,
+beginner_spells[:summon_flesh] = Card.new(
+  title: "Summon Flesh",
+  #damage: 3,
+  blood: 1,
+  #reposte: 'Prc',
+  actions: [
+    Card::Action.new(
+      content: '(**5 or less**) Heal a target within arms reach equal to the card played.',
+      symbol: [:hearts, :blood]
+    ),
+    Card::Action.new(
+      content: 'If this spell heals for more then half of the target\'s max health then they get flesh mass disease.',
+      seperator: true,
+    ),
+  ],
+  color: 'firebrick',
+  flavour: '"Writhing flesh mass that assimilates"',
+  type: 'Blood Magic (Eldritch)'
 )
-card.actions.push Card::Action.new(
-  content: 'If this spell heals for more then half of the target\'s max health then they get flesh mass disease.',
-  seperator: true,
+
+beginner_spells[:lighting_fork] = Card.new(
+  title: "Lightning Fork",
+  damage: '2d4',
+  blood: 1,
+  #reposte: 'Prc',
+  actions: [
+    Card::Action.new(
+      content: '(**even**) Deal 1d4 damage to one target and 1d4 to another. Both targets need to be within 10 meters if you',
+      symbol: [:clubs, :blood]
+    ),
+  ],
+  color: 'firebrick',
+  flavour: '"Double the static, double the fun!"',
+  type: 'Blood Magic (Storm)'
 )
-card.flavour = '"Writhing flesh mass that assimilates"'
-card.type = 'Blood Magic'
 
-cards.push card
-
-card = Card.new
-card.title = "Slingshot"
-card.color = 'rebeccapurple'
-
-#card.attrib_top_left = '14'
-#card.attrib_top_left_icon = '🩸'
-
-#card.attrib_top_right = '2'
-#card.attrib_top_right_icon = '🛡️'
-
-#card.attrib_bottom_right = '2'
-#card.attrib_bottom_right_icon = '🎲'
-
-#card.attrib_bottom_left = '1'
-#card.attrib_bottom_left_icon = '⚔️'
-
-card.actions.push Card::Action.new(
-  content: 'Attack with a 🎲 **d6** roll. On success deal ⚔️ **Prescision damage**.',
-  symbol: :tap,
+beginner_spells[:summon_alchemicals] = Card.new(
+  title: "Summon Alchemicals",
+  #damage: 3,
+  blood: 2,
+  #reposte: 'Prc',
+  actions: [
+    Card::Action.new(
+      content: '(**odd**) Summon a random amount of a random alchemical depending on various hidden factors.',
+      symbol: [:diamonds, :blood]
+    ),
+  ],
+  color: 'firebrick',
+  flavour: '"You arent making a bomb, are you?"',
+  type: 'Blood Magic (Eldritch)'
 )
-card.actions.push Card::Action.new(
-  content: 'Ranged: This weapon avoids melee reposte attacks.',
-  seperator: true,
+
+beginner_spells[:summon_alchemicals] = Card.new(
+  title: "Summon Alchemicals",
+  #damage: 3,
+  blood: 2,
+  #reposte: 'Prc',
+  actions: [
+    Card::Action.new(
+      content: '(**odd**) Summon a random amount of a random alchemical depending on various hidden factors.',
+      symbol: [:diamonds, :blood]
+    ),
+  ],
+  color: 'firebrick',
+  flavour: '"You arent making a bomb, are you?"',
+  type: 'Blood Magic (Eldritch)'
 )
-card.flavour = '"Only a troublemaker would use this."'
-card.type = 'Weapon'
-
-cards.push card
 
 
-File.write('card.html', Card.build(cards))
+File.write('beginner_spells.html', Card.build(beginner_spells.values))

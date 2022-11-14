@@ -25,7 +25,7 @@ class Card
     attrib_top_left: nil,
     attrib_top_left_icon: '🛡️',
     attrib_bottom_right: nil,
-    attrib_bottom_right_icon: '🎲',
+    attrib_bottom_right_icon: '🛡️',
     reposte: nil,
     attrib_bottom_left: nil,
     attrib_bottom_left_icon: '⚔️',
@@ -57,9 +57,14 @@ class Card
 
     def initialize(content:, symbol: nil, seperator: false)
       self.content = content
-      self.symbol = symbol
+      self.symbol = Array(symbol)
       self.seperator = seperator
     end
+
+    def symbol
+      @symbol ||= []
+    end
+
   end
 
   class << self
@@ -192,6 +197,14 @@ class Card
             rule '.tap_icon' do
               background color: :black
             end
+            rule '.joker_icon' do
+              background color: :black
+              padding '6px 3px 2px 5px'
+            end
+            rule '.blood_icon' do
+              background color: :black
+              padding '6px 3px 2px 5px'
+            end
             rule '.suit_icon' do
               background color: :black
               text align: :center
@@ -246,6 +259,8 @@ class Card
             end
             rule '.symbol_wrapper_inner' do
               display 'flex'
+              flex direction: 'column'
+              gap 5.px
             end
             rule '.action_detail' do
               padding top: 0.px
@@ -299,29 +314,43 @@ class Card
                 card.actions.each do |action|
                   _.div.action do
                     _.hr if action.seperator
-                    if action.symbol
+                    if !action.symbol.empty?
                       _.div.symbol_wrapper_outer do
                         _.div.symbol_wrapper_inner do
                           #build_symbol
-                          if action.symbol == :tap
+                          if action.symbol.include? :tap
                             _.span.icon.tap_icon do
                               "↪️"
                             end
-                          elsif action.symbol == :spades
+                          end
+                          if action.symbol.include? :spades
                             _.span.icon.suit_icon.spades_icon do
                               "♠️"
                             end
-                          elsif action.symbol == :clubs
+                          end
+                          if action.symbol.include? :clubs
                             _.span.icon.suit_icon.clubs_icon do
                               "♣️"
                             end
-                          elsif action.symbol == :diamonds
+                          end
+                          if action.symbol.include? :diamonds
                             _.span.icon.suit_icon.diamonds_icon do
                               "♦️"
                             end
-                          elsif action.symbol == :hearts
+                          end
+                          if action.symbol.include? :hearts
                             _.span.icon.suit_icon.hearts_icon do
                               "♥️"
+                            end
+                          end
+                          if action.symbol.include? :joker
+                            _.span.icon.joker_icon do
+                              "🃏"
+                            end
+                          end
+                          if action.symbol.include? :blood
+                            _.span.icon.blood_icon do
+                              "🩸"
                             end
                           end
                         end

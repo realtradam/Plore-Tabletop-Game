@@ -1,5 +1,5 @@
 # Social
-
+ 
 Social checks take into account 3 different factors in addition to the regular ones.
 
 ## Factors
