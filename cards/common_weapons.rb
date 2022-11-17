@@ -12,10 +12,10 @@ common_weapons[:thrusting_sword] = Card.new(
       content: '🎲 **d8 + Prc** to hit.',
       symbol: :tap,
     ),
-    Card::Action.new(
-      seperator: true,
-      content: '**Opportune Strike**: When targeting an enemy with this weapon, mark them until the end of their turn. While marked if they attack somone other then you then you can perform a reposte on them.',
-    )
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '**Opportune Strike**: When targeting an enemy with this weapon, mark them until the end of their turn. While marked if they attack somone other then you then you can perform a reposte on them.',
+    #)
   ],
   flavour: '"World Famous Iron Toothpick"',
   type: 'Thrusting Sword Weapon'
@@ -25,8 +25,8 @@ common_weapons[:thrusting_sword] = Card.new(
 common_weapons[:polearm] = Card.new(
   title: "Polearm",
   color: 'rebeccapurple',
-  reposte: 'Str',
-  damage: '3',
+  reposte: 'Prc',
+  damage: '4',
   actions: [
     Card::Action.new(
       content: '🎲 **d6 + Str** to hit.',
@@ -34,12 +34,41 @@ common_weapons[:polearm] = Card.new(
     ),
     Card::Action.new(
       seperator: true,
-      content: '**Reach**: When making an attack, you ignore repostes from your target unless they also have Reach.',
-      # TODO: this is the same as the bow making it superiour
-      #symbol: :spades,
+      content: '**Reach**',
     ),
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '**Reach**: When making an attack, you ignore repostes from your target unless they also have Reach.',
+    #  # TODO: this is the same as the bow making it superiour
+    #  #symbol: :spades,
+    #),
   ],
   flavour: '"Getting up close and personal while staying far away"',
+  type: 'Polearm Weapon'
+)
+
+common_weapons[:spear] = Card.new(
+  title: "Spear",
+  color: 'rebeccapurple',
+  reposte: 'Prc',
+  damage: '3',
+  actions: [
+    Card::Action.new(
+      content: '🎲 **d6 + Prc** to hit.',
+      symbol: :tap,
+    ),
+    Card::Action.new(
+      seperator: true,
+      content: '**Reach**, **Throwable**',
+    ),
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '**Reach**: When making an attack, you ignore repostes from your target unless they also have Reach.',
+    #  # TODO: this is the same as the bow making it superiour
+    #  #symbol: :spades,
+    #),
+  ],
+  flavour: '"5x more throwable then previous editions"',
   type: 'Polearm Weapon'
 )
 
@@ -50,24 +79,29 @@ common_weapons[:dagger] = Card.new(
   damage: '2',
   actions: [
     Card::Action.new(
-      content: '🎲 **d6 + Prc** to hit.',
+      content: '🎲 **d4 + Prc** to hit.',
       symbol: :tap,
     ),
     Card::Action.new(
       seperator: true,
-      content: '(even) **Swift Attack**: Refresh this card.',
-      symbol: :spades
+      content: '**Light**, **Throwable**',
+      #symbol: :spades
     ),
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '(even) **Swift Attack**: Refresh this card.',
+    #  symbol: :spades
+    #),
   ],
   flavour: '"A quick and convinient way to turn a spleen into a sheath"',
   type: 'Dagger Weapon'
 )
 
-common_weapons[:bow] = Card.new(
-  title: "Bow",
+common_weapons[:longbow] = Card.new(
+  title: "Longbow",
   color: 'rebeccapurple',
   damage: '3',
-  reposte: 1,
+  #reposte: 1,
   actions: [
     Card::Action.new(
       content: '🎲 **d4 + (2·Prc)** to hit.',
@@ -75,8 +109,12 @@ common_weapons[:bow] = Card.new(
     ),
     Card::Action.new(
       seperator: true,
-      content: '**Ranged**: When making an attack, you ignore repostes from your target. You can\'t deal a reposte either.',
+      content: '**Ranged**',
     )
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '**Ranged**: When making an attack, you ignore repostes from your target. You can\'t deal a reposte either.',
+    #)
   ],
   flavour: '"One stringed instrument that got repurposed as a weapon."',
   type: 'Bow Weapon'
@@ -85,8 +123,8 @@ common_weapons[:bow] = Card.new(
 common_weapons[:crossbow] = Card.new(
   title: "Crossbow",
   color: 'rebeccapurple',
-  damage: '4',
-  reposte: 1,
+  damage: '3',
+  #reposte: 1,
   actions: [
     Card::Action.new(
       content: '(must be loaded) 🎲 **d6 + Prc** to hit.',
@@ -99,7 +137,7 @@ common_weapons[:crossbow] = Card.new(
     ),
     Card::Action.new(
       seperator: true,
-      content: '**Ranged**: When making an attack, you ignore repostes from your target. You can\'t deal a reposte either.',
+      content: '**Ranged**',
     )
   ],
   flavour: '"No one will cross you with this weapon"',
@@ -112,14 +150,14 @@ common_weapons[:hammer] = Card.new(
   damage: 3,
   actions: [
     Card::Action.new(
-      content: '🎲 **d6 + Str** to hit.',
+      content: '🎲 **d4 + (2·Str)** to hit.',
       symbol: :tap,
     ),
-    Card::Action.new(
-      seperator: true,
-      content: '**Power Swing**: 🎲 **d4 + Str** to hit. Deal **Str + 2** damage.',
-      symbol: :tap
-    ),
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '**Power Swing**: 🎲 **d4 + Str** to hit. Deal **Str + 2** damage.',
+    #  symbol: :tap
+    #),
   ],
   flavour: '"If you can pick it up, then you are worthy enough to use it."',
   color: 'rebeccapurple',
@@ -132,14 +170,14 @@ common_weapons[:straight_sword] = Card.new(
   reposte: 'Str',
   actions: [
     Card::Action.new(
-      content: '🎲 **d6 + Str** to hit.',
+      content: '🎲 **d8 + Str** to hit.',
       symbol: :tap,
     ),
-    Card::Action.new(
-      seperator: true,
-      content: '(Two Handed) 🎲 **d6 + Str** to hit. Deal **Str** damage.',
-      symbol: :tap,
-    )
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '(Two Handed) 🎲 **d6 + Str** to hit. Deal **Str** damage.',
+    #  symbol: :tap,
+    #)
   ],
   flavour: '"El Classico"',
   color: 'rebeccapurple',
@@ -148,18 +186,18 @@ common_weapons[:straight_sword] = Card.new(
 
 common_weapons[:axe] = Card.new(
   title: "Axe",
-  damage: 3,
+  damage: 4,
   reposte: 'Str',
   actions: [
     Card::Action.new(
-      content: '🎲 **d8 + Str** to hit.',
+      content: '🎲 **d6 + Str** to hit.',
       symbol: :tap,
     ),
-    Card::Action.new(
-      seperator: true,
-      content: '**Throw**: 🎲 **d6 + Str** to hit. This attack is **Ranged** and thus you ignore repostes from your target. You lose this weapon by using this attack.',
-      symbol: :tap
-    ),
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '**Throw**: 🎲 **d6 + Str** to hit. This attack is **Ranged** and thus you ignore repostes from your target. You lose this weapon by using this attack.',
+    #  symbol: :tap
+    #),
   ],
   flavour: '"Looks great with a flannel shirt."',
   color: 'rebeccapurple',
@@ -182,9 +220,13 @@ common_weapons[:staff] = Card.new(
     ),
     Card::Action.new(
       seperator: true,
-      content: '(odd) **Swift Attack**: Refresh this card.',
-      symbol: :spades
-    ),
+      content: '**Light**',
+    )
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '(odd) **Swift Attack**: Refresh this card.',
+    #  symbol: :spades
+    #),
   ],
   color: 'rebeccapurple',
   flavour: '"Says \'Made by the Ninja Custodial Group\' on the handle"',
@@ -197,18 +239,38 @@ common_weapons[:curved_sword] = Card.new(
   reposte: 'Prc',
   actions: [
     Card::Action.new(
-      content: '🎲 **d6 + Prc** to hit.',
+      content: '🎲 **d8 + Str** to hit.',
       symbol: :tap,
     ),
-    Card::Action.new(
-      seperator: true,
-      content: '(odd, recieving a reposte) **Close Quarters**: Deal damage equal to your reposte.',
-      symbol: :spades
-    ),
+    #Card::Action.new(
+    #  seperator: true,
+    #  content: '(odd, recieving a reposte) **Close Quarters**: Deal damage equal to your reposte.',
+    #  symbol: :spades
+    #),
   ],
   color: 'rebeccapurple',
   flavour: '"Arrrgh"',
   type: 'Curved Sword Weapon',
+)
+
+common_weapons[:forked_sword] = Card.new(
+  title: "Forked Sword",
+  damage: 3,
+  reposte: 'Str',
+  roll: '1d6',
+  actions: [
+    Card::Action.new(
+      content: '🎲 **d6 + Str** to hit.',
+      symbol: :tap,
+    ),
+    Card::Action.new(
+      seperator: true,
+      content: '**Casting Focus**',
+    ),
+  ],
+  color: 'rebeccapurple',
+  flavour: '"Weapon used in the war against the gods. Vintage!"',
+  type: 'Forked Sword Weapon',
 )
 
 common_weapons[:caestus] = Card.new(
@@ -222,6 +284,33 @@ common_weapons[:caestus] = Card.new(
   flavour: '"Weapon of choice for a fit bronze statue"',
   type: 'Weapon Equipment'
 )
+
+common_weapons[:tuning_fork] = Card.new(
+  title: "Tuning Fork",
+  roll: '1d4',
+  actions: [
+    Card::Action.new(
+      content: '**Casting Focus**',
+    ),
+  ],
+  color: 'DarkBlue',
+  flavour: '"Resonates with various magical frequencies to help with casting blood magic"',
+  type: 'Magic Casting Tool',
+)
+
+common_weapons[:casters_glove] = Card.new(
+  title: "Caster's Glove",
+  roll: '1d8',
+  actions: [
+    Card::Action.new(
+      content: '**Casting Focus**',
+    ),
+  ],
+  color: 'DarkBlue',
+  flavour: '"Modern  casting tool that works by directly drawing your blood"',
+  type: 'Magic Casting Tool',
+)
+
 
 common_weapons[:test_weapon] = Card.new(
   title: "Test Weapon",

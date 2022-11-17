@@ -10,6 +10,8 @@
 		- [Vices](build/vices.md)
 		- [Races](./races.md)
 		- [Attributes](./attributes.md)
+		- [Classes](classes.md)
+		- 
 	- [What You Have]()
 		- [Gear]()
 			- [Armour](armour.md)

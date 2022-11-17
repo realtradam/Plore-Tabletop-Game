@@ -76,20 +76,20 @@ beginner_spells[:summon_alchemicals] = Card.new(
   type: 'Blood Magic (Eldritch)'
 )
 
-beginner_spells[:summon_alchemicals] = Card.new(
-  title: "Summon Alchemicals",
-  #damage: 3,
-  blood: 2,
+beginner_spells[:northern_wind] = Card.new( #TODO
+  title: "Northern Wind",
+  damage: '2d4',
+  blood: 1,
   #reposte: 'Prc',
   actions: [
     Card::Action.new(
-      content: '(**odd**) Summon a random amount of a random alchemical depending on various hidden factors.',
-      symbol: [:diamonds, :blood]
+      content: '(**odd**) Shoot a cold wind from your hands, freezing things in its path.',
+      symbol: [:clubs, :blood]
     ),
   ],
   color: 'firebrick',
-  flavour: '"You arent making a bomb, are you?"',
-  type: 'Blood Magic (Eldritch)'
+  flavour: '"Won\'t fail blowing out birthday candles"',
+  type: 'Blood Magic (Storm)'
 )
 
 

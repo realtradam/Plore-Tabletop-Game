@@ -23,10 +23,12 @@ class Card
     attrib_top_right_icon: '🩸',
     blood: nil,
     attrib_top_left: nil,
-    attrib_top_left_icon: '🛡️',
+    attrib_top_left_icon: '🎲',
+    roll: nil,
     attrib_bottom_right: nil,
     attrib_bottom_right_icon: '🛡️',
     reposte: nil,
+    defence: nil,
     attrib_bottom_left: nil,
     attrib_bottom_left_icon: '⚔️',
     damage: nil,
@@ -35,8 +37,10 @@ class Card
     type: nil
   )
     attrib_top_right ||= blood.to_s unless blood.nil?
+    attrib_bottom_right ||= defence.to_s unless defence.nil?
     attrib_bottom_right ||= reposte.to_s unless reposte.nil?
     attrib_bottom_left ||= damage.to_s unless damage.nil?
+    attrib_top_left ||= roll.to_s unless roll.nil?
     self.title = title
     self.color = color
     self.attrib_top_left = attrib_top_left
