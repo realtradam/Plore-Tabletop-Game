@@ -8,10 +8,6 @@ specialized in the "city"
 Good at focusing a target(mark)
 specialized in "nature"
 
-## Sorcerer
+## Astrologist
 Specialized at casting
 specialized in "magic"
-
-## Monk
-Specialized at inner peace?
-can move cards around the field
