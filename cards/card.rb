@@ -227,6 +227,28 @@ class Card
             rule '.hearts_icon' do
               color :orangered
             end
+            rule '.odd_icon' do
+              background color: :black
+              padding '12px 0px 0px 12px'
+              font size: 30.px
+              height 48.px
+              width 48.px
+            end
+            rule '.even_icon' do
+              background color: :black
+              padding '12px 0px 0px 12px'
+              font size: 30.px
+              height 48.px
+              width 48.px
+            end
+            rule '.face_icon' do
+              background color: :black
+              #padding '12px 0px 0px 12px'
+              #font size: 30.px
+              #height 48.px
+              #width 48.px
+              padding '6px 3px 2px 5px'
+            end
             rule '.icon' do
               display 'inline-block'
               padding '8px 4px 0px 4px'
@@ -235,16 +257,6 @@ class Card
               font size: 40.px
               height 52.px
               width 52.px
-            end
-            rule '.face_icon' do
-              color :white
-              display 'inline-block'
-              padding 4.px
-              height 62.px
-              min width: 62.px
-              font size: 55.px
-              border radius: 15.px
-              background color: :black
             end
             rule '.card_type' do
               background color: :antiquewhite
@@ -355,6 +367,21 @@ class Card
                           if action.symbol.include? :blood
                             _.span.icon.blood_icon do
                               "🩸"
+                            end
+                          end
+                          if action.symbol.include? :odd
+                            _.span.icon.odd_icon do
+                              "🔻"
+                            end
+                          end
+                          if action.symbol.include? :even
+                            _.span.icon.even_icon do
+                              "⬜"
+                            end
+                          end
+                          if action.symbol.include? :face
+                            _.span.icon.face_icon do
+                              "🎭"
                             end
                           end
                         end

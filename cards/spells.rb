@@ -68,7 +68,7 @@ beginner_spells[:summon_alchemicals] = Card.new(
   actions: [
     Card::Action.new(
       content: '(**odd**) Summon a random amount of a random alchemical depending on various hidden factors.',
-      symbol: [:diamonds, :blood]
+      symbol: [:diamonds, :blood, :odd, :even, :face]
     ),
   ],
   color: 'firebrick',
