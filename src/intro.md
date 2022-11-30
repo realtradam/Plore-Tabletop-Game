@@ -1,5 +1,13 @@
 # Intro
 
+Money is represented by resource die.
+d4 d6 d8 d10 d12 d20
+Whenever you spend a night at a tavern, it costs one roll
+Whenever you have duplicate dice they get combined into 1 die higher.
+E.g d8 and d8 combine to d10
+Buying things costs x amount of rolls.
+E.g a legendary sword might cost 3d8 to buy. This means u need at least a d8 or higher, you then roll that 3 times. If at least one or more of those rolls is a 1 the die gets downgraded 1 step but no more.
+
 Big rework going to happen. I want to use custom cards instead.
 
 Players race card has 2 abilities:
