@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "combat.md",
+            "file": "intro.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "combat.md",
+            "file": "intro.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "combat.md",
+            "file": "intro.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,15 +106,18 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "combat.md"
+            "file": "intro.md"
           }
         }
       }
     ],
     "currentTab": 0
   },
-  "active": "0701eaa2cd4d2e25",
+  "active": "0bff301cada6cd1f",
   "lastOpenFiles": [
+    "SUMMARY.md",
+    "intro.md",
+    "combat.md",
     "attributes.md",
     "races.md"
   ]
