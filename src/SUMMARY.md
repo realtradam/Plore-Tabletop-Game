@@ -18,12 +18,12 @@
 			- [Weapons](weapons.md)
 
 - [Running The Game]()
-	- [Checks](running-the-game/checks.md)
+	- [Checks](running-the-game/resolution.md)
 	- [Abilities](running-the-game/abilities.md)
 		- [Attacking](running-the-game/weapons.md)
-		- [Spellcasting](running-the-game/spellcasting.md)
+		- [Spellcasting](running-the-game/abilities.md)
 	- [Combat](running-the-game/combat.md)
-	- [Social](running-the-game/social.md)
+	- [Social](running-the-game/resolution.md)
 	- [Fate Deck](running-the-game/fate-deck.md)
 	- [Travel](running-the-game/travel.md)
 

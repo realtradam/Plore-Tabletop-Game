@@ -241,6 +241,20 @@ class Card
               height 48.px
               width 48.px
             end
+            rule '.greater_icon' do
+              background color: :black
+              padding '12px 0px 0px 12px'
+              font size: 30.px
+              height 48.px
+              width 48.px
+            end
+            rule '.lesser_icon' do
+              background color: :black
+              padding '12px 0px 0px 12px'
+              font size: 30.px
+              height 48.px
+              width 48.px
+            end
             rule '.face_icon' do
               background color: :black
               #padding '12px 0px 0px 12px'
@@ -382,6 +396,16 @@ class Card
                           if action.symbol.include? :face
                             _.span.icon.face_icon do
                               "🎭"
+                            end
+                          end
+                          if action.symbol.include? :greater
+                            _.span.icon.greater_icon do
+                              "➕"
+                            end
+                          end
+                          if action.symbol.include? :lesser
+                            _.span.icon.lesser_icon do
+                              "➖"
                             end
                           end
                         end

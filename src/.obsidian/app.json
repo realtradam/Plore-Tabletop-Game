@@ -1,6 +1,7 @@
 {
   "fileSortOrder": "byModifiedTime",
-  "alwaysUpdateLinks": false,
+  "alwaysUpdateLinks": true,
   "trashOption": "local",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
 }

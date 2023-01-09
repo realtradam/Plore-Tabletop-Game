@@ -1,0 +1,144 @@
+player: 2
+dm    : 1
+Mean:   0.15256
+Median: 0.0
+Mode:   0.0
+Distribution:
+{0=>0.84744, 1=>0.15256}
+
+player: 2
+dm    : 2
+Mean:   0.292
+Median: 0.0
+Mode:   0.0
+Distribution:
+{0=>0.719435, 1=>0.26913, 2=>0.011435}
+
+player: 2
+dm    : 3
+Mean:   0.41299
+Median: 0.0
+Mode:   0.0
+Distribution:
+{0=>0.616645, 1=>0.35372, 2=>0.029635}
+
+player: 2
+dm    : 4
+Mean:   0.529445
+Median: 0.0
+Mode:   0.0
+Distribution:
+{0=>0.52538, 1=>0.419795, 2=>0.054825}
+
+player: 2
+dm    : 5
+Mean:   0.63111
+Median: 1.0
+Mode:   1.0
+Distribution:
+{1=>0.46442, 0=>0.452235, 2=>0.083345}
+
+player: 2
+dm    : 6
+Mean:   0.726155
+Median: 1.0
+Mode:   1.0
+Distribution:
+{1=>0.497885, 0=>0.38798, 2=>0.114135}
+
+player: 3
+dm    : 1
+Mean:   0.2203
+Median: 0.0
+Mode:   0.0
+Distribution:
+{0=>0.7797, 1=>0.2203}
+
+player: 3
+dm    : 2
+Mean:   0.41693
+Median: 0.0
+Mode:   0.0
+Distribution:
+{0=>0.61351, 1=>0.35605, 2=>0.03044}
+
+player: 3
+dm    : 3
+Mean:   0.59677
+Median: 1.0
+Mode:   0.0
+Distribution:
+{0=>0.48433, 1=>0.436645, 2=>0.07695, 3=>0.002075}
+
+player: 3
+dm    : 4
+Mean:   0.75684
+Median: 1.0
+Mode:   1.0
+Distribution:
+{1=>0.478115, 0=>0.385945, 2=>0.129095, 3=>0.006845}
+
+player: 3
+dm    : 5
+Mean:   0.90343
+Median: 1.0
+Mode:   1.0
+Distribution:
+{1=>0.49448, 0=>0.3083, 2=>0.18271, 3=>0.01451}
+
+player: 3
+dm    : 6
+Mean:   1.03908
+Median: 1.0
+Mode:   1.0
+Distribution:
+{1=>0.494765, 0=>0.245995, 2=>0.233405, 3=>0.025835}
+
+player: 4
+dm    : 1
+Mean:   0.277745
+Median: 0.0
+Mode:   0.0
+Distribution:
+{0=>0.722255, 1=>0.277745}
+
+player: 4
+dm    : 2
+Mean:   0.530095
+Median: 0.0
+Mode:   0.0
+Distribution:
+{0=>0.525, 1=>0.419905, 2=>0.055095}
+
+player: 4
+dm    : 3
+Mean:   0.75736
+Median: 1.0
+Mode:   1.0
+Distribution:
+{1=>0.476565, 0=>0.386465, 2=>0.130115, 3=>0.006855}
+
+player: 4
+dm    : 4
+Mean:   0.961645
+Median: 1.0
+Mode:   1.0
+Distribution:
+{1=>0.48815, 0=>0.286295, 2=>0.203485, 3=>0.021755, 4=>0.000315}
+
+player: 4
+dm    : 5
+Mean:   1.15414
+Median: 1.0
+Mode:   1.0
+Distribution:
+{1=>0.472675, 2=>0.27089, 0=>0.210455, 3=>0.044235, 4=>0.001745}
+
+player: 4
+dm    : 6
+Mean:   1.322185
+Median: 1.0
+Mode:   1.0
+Distribution:
+{1=>0.44169, 2=>0.323865, 0=>0.158145, 3=>0.072435, 4=>0.003865}
+
