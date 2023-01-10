@@ -2,7 +2,7 @@
  
 ## Start of Combat
 
-GM places enemies on board, draws from environment deck and places them in play as well. 
+Game board does not use tiles, instead uses cards to represent the game world and state.
 
 Turn order will be determined by some way in the future(not yet sure)
 

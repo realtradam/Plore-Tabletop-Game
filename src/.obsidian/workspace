@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "intro.md",
+            "file": "races.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "intro.md",
+            "file": "races.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "intro.md",
+            "file": "races.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -106,7 +106,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "intro.md"
+            "file": "races.md"
           }
         }
       }
@@ -115,8 +115,9 @@
   },
   "active": "0bff301cada6cd1f",
   "lastOpenFiles": [
-    "SUMMARY.md",
+    "running-the-game/combat.md",
     "intro.md",
+    "SUMMARY.md",
     "combat.md",
     "attributes.md",
     "races.md"
