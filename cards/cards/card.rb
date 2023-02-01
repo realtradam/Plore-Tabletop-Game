@@ -1,5 +1,6 @@
 require 'paggio'
 require 'paggio/markdown'
+
 class Card
   attr_accessor(
     :attrib_top_left,     :attrib_top_left_icon, 
@@ -353,6 +354,21 @@ class Card
                               "↪️"
                             end
                           end
+                          if action.symbol.include? :blood
+                            _.span.icon.blood_icon do
+                              "🩸"
+                            end
+                          end
+                          if action.symbol.include? :reactive
+                            _.span.icon.lesser_icon do
+                              "📣"
+                            end
+                          end
+                          if action.symbol.include? :joker
+                            _.span.icon.joker_icon do
+                              "🃏"
+                            end
+                          end
                           if action.symbol.include? :spades
                             _.span.icon.suit_icon.spades_icon do
                               "♠️"
@@ -371,16 +387,6 @@ class Card
                           if action.symbol.include? :hearts
                             _.span.icon.suit_icon.hearts_icon do
                               "♥️"
-                            end
-                          end
-                          if action.symbol.include? :joker
-                            _.span.icon.joker_icon do
-                              "🃏"
-                            end
-                          end
-                          if action.symbol.include? :blood
-                            _.span.icon.blood_icon do
-                              "🩸"
                             end
                           end
                           if action.symbol.include? :odd
@@ -406,6 +412,11 @@ class Card
                           if action.symbol.include? :lesser
                             _.span.icon.lesser_icon do
                               "➖"
+                            end
+                          end
+                          if action.symbol.include? :invisible
+                            _.span.icon.lesser_icon(style: 'visibility: hidden;') do
+                              "🈷️"
                             end
                           end
                         end
@@ -472,6 +483,10 @@ function downloadAsImage() {
         SCRIPT
       end
       end
+    end
+
+    def output(name, cards, prefix: "output/")
+      File.write("#{prefix}#{name}.html", Card.build(cards.values))
     end
   end
 end

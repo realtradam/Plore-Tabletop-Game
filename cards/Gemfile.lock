@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    kramdown (2.4.0)
+      rexml
+    paggio (0.3.0)
+    rexml (3.2.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  kramdown (~> 2.4)
+  paggio (~> 0.3.0)
+
+BUNDLED WITH
+   2.1.4

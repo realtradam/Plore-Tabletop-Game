@@ -1,4 +1,4 @@
-load 'card.rb'
+require_relative 'card.rb'
 
 armour = {}
 
@@ -56,3 +56,5 @@ armour[:none] = Card.new(
 )
 
 File.write('armour.html', Card.build(armour.values))
+
+Card.output('armour', armour)

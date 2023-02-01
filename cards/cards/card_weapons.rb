@@ -1,4 +1,4 @@
-load 'card.rb'
+require_relative 'card.rb'
 
 cards = []
 
@@ -87,3 +87,5 @@ cards.push card
 
 
 File.write('card.html', Card.build(cards))
+
+Card.output('alchemical_recipes', alchemical_recipes)

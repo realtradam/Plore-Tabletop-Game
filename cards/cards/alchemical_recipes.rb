@@ -1,8 +1,8 @@
-load 'card.rb'
+require_relative 'card.rb'
 
 alchemical_recipes = {}
 
-beginner_spells[:crystal_encasement] = Card.new(
+alchemical_recipes[:crystal_encasement] = Card.new(
   title: "Crystal Encasement Recipe",
   #damage: 3,
   #blood: 2,
@@ -18,4 +18,4 @@ beginner_spells[:crystal_encasement] = Card.new(
   type: 'Blood Magic (Eldritch)'
 )
 
-File.write('beginner_spells.html', Card.build(beginner_spells.values))
+Card.output('alchemical_recipes', alchemical_recipes)

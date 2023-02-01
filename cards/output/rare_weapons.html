@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.flavour {
+				color: rgba(0,0,0,0.5);
+				padding: 35px;
+				font-size: 35px;
+			}
+			.flavour_wrapper {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				text-align: center;
+			}
+			.action_detail {
+				padding-top: 0px;
+				text-align: left;
+			}
+			.symbol_wrapper_inner {
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+			}
+			.symbol_wrapper_outer {
+				display: flex;
+				gap: 20px;
+			}
+			.card_type {
+				background-color: antiquewhite;
+				text-align: center;
+				font-size: 40px;
+				padding: 10px;
+				-moz-border-radius: 15px 15px 0 0;
+				-webkit-border-radius: 15px 15px 0 0;
+				border-radius: 15px 15px 0 0;
+				font-weight: bold;
+				border-width: 2px 2px 0 2px;
+				border-color: black;
+				border-style: solid;
+			}
+			.icon {
+				display: inline-block;
+				padding: 8px 4px 0px 4px;
+				-moz-border-radius: 15px;
+				-webkit-border-radius: 15px;
+				border-radius: 15px;
+				aspect-ratio: 1/1;
+				font-size: 40px;
+				height: 52px;
+				width: 52px;
+			}
+			.face_icon {
+				background-color: black;
+				padding: 6px 3px 2px 5px;
+			}
+			.lesser_icon {
+				background-color: black;
+				padding: 12px 0px 0px 12px;
+				font-size: 30px;
+				height: 48px;
+				width: 48px;
+			}
+			.greater_icon {
+				background-color: black;
+				padding: 12px 0px 0px 12px;
+				font-size: 30px;
+				height: 48px;
+				width: 48px;
+			}
+			.even_icon {
+				background-color: black;
+				padding: 12px 0px 0px 12px;
+				font-size: 30px;
+				height: 48px;
+				width: 48px;
+			}
+			.odd_icon {
+				background-color: black;
+				padding: 12px 0px 0px 12px;
+				font-size: 30px;
+				height: 48px;
+				width: 48px;
+			}
+			.hearts_icon {
+				color: orangered;
+			}
+			.diamonds_icon {
+				color: orangered;
+			}
+			.clubs_icon {
+				color: antiquewhite;
+			}
+			.spades_icon {
+				color: antiquewhite;
+			}
+			.suit_icon {
+				background-color: black;
+				text-align: center;
+				font-size: 60px;
+				line-height: 40px;
+			}
+			.blood_icon {
+				background-color: black;
+				padding: 6px 3px 2px 5px;
+			}
+			.joker_icon {
+				background-color: black;
+				padding: 6px 3px 2px 5px;
+			}
+			.tap_icon {
+				background-color: black;
+			}
+			.content {
+				background-color: antiquewhite;
+				color: black;
+				flex: 5;
+				-moz-border-radius: 25px;
+				-webkit-border-radius: 25px;
+				border-radius: 25px;
+				overflow: hidden;
+				position: relative;
+				font-size: 50px;
+				display: flex;
+				justify-content: flex-start;
+				gap: 5px;
+				text-align: left;
+				padding: 35px 30px 30px 30px;
+				flex-direction: column;
+				border-width: 2px 2px 2px 2px;
+				border-color: black;
+				border-style: solid;
+			}
+			.attrib_bottom_icons {
+				bottom: 0;
+			}
+			.attrib_top_icons {
+				top: 0;
+			}
+			.attrib_bl {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				-moz-border-radius: 0 50px 0 0;
+				-webkit-border-radius: 0 50px 0 0;
+				border-radius: 0 50px 0 0;
+				border-color: rgba(255,255,255,0.50);
+				border-style: solid;
+				border-width: 5px 5px 0 0;
+				padding: 15px 25px 15px 15px;
+			}
+			.attrib_br {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				-moz-border-radius: 50px 0 0 0;
+				-webkit-border-radius: 50px 0 0 0;
+				border-radius: 50px 0 0 0;
+				border-color: rgba(255,255,255,0.50);
+				border-style: solid;
+				border-width: 5px 0 0 5px;
+				padding: 15px 15px 15px 25px;
+			}
+			.attrib_tr {
+				position: absolute;
+				top: 0;
+				right: 0;
+				-moz-border-radius: 0 0 0 50px;
+				-webkit-border-radius: 0 0 0 50px;
+				border-radius: 0 0 0 50px;
+				border-color: rgba(255,255,255,0.50);
+				border-style: solid;
+				border-width: 0 0 5px 5px;
+				padding: 15px 15px 15px 25px;
+			}
+			.attrib_tl {
+				position: absolute;
+				top: 0;
+				left: 0;
+				-moz-border-radius: 0 0 50px 0;
+				-webkit-border-radius: 0 0 50px 0;
+				border-radius: 0 0 50px 0;
+				border-color: rgba(255,255,255,0.50);
+				border-style: solid;
+				border-width: 0 5px 5px 0;
+				padding: 15px 25px 15px 15px;
+			}
+			.attrib_icon {
+				background-color: rgba(255,255,255,0.10);
+			}
+			.title {
+				background-color: black;
+				color: antiquewhite;
+				flex: 3;
+				-moz-border-radius: 25px;
+				-webkit-border-radius: 25px;
+				border-radius: 25px;
+				overflow: hidden;
+				position: relative;
+				font-size: 85px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				flex-direction: column;
+				padding: 25px;
+				border-width: 2px 2px 2px 2px;
+				border-color: black;
+				border-style: solid;
+			}
+			.group {
+				margin: 50px 50px 0px 50px;
+				-moz-border-radius: 25px;
+				-webkit-border-radius: 25px;
+				border-radius: 25px;
+				display: flex;
+				flex-direction: column;
+				align-content: space-between;
+				height: auto;
+				flex: 2;
+				gap: 35px;
+			}
+			.card {
+				height: 1425px;
+				width: 825px;
+				background-color: black;
+				display: flex;
+			}
+			.card_wrapper {
+				min-height: 2850px;
+				width: 5775px;
+				display: flex;
+				flex-wrap: wrap;
+				height: 100%;
+			}
+			button {
+				font-size: 50px;
+				padding: 30px;
+				margin: 30px;
+			}
+			p {
+				margin: 0;
+			}
+			body {
+				background-color: #1e1e1e;
+			}
+		</style>
+	</head>
+	<button onclick="downloadAsImage()">
+		Download
+	</button>
+	<div id="card_wrapper" class="card_wrapper">
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Glaive
+					</p>
+					<div class="attrib_icon attrib_bl">
+						⚔️ 4
+					</div>
+					<div class="attrib_icon attrib_br">
+						Prc 🛡️
+					</div>
+				</div>
+				<div class="content">
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>🎲 <strong>d6 · Str</strong> to Slash.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span style="visibility: hidden;" class="icon lesser_icon">
+									🈷️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p><strong>Reach</strong>, <strong>Heavy</strong></p>
+							</div>
+						</div>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“Getting up close and personal while staying far away”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Polearm Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Twinblade
+					</p>
+					<div class="attrib_icon attrib_bl">
+						⚔️ 3
+					</div>
+					<div class="attrib_icon attrib_br">
+						Prc 🛡️
+					</div>
+				</div>
+				<div class="content">
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>🎲 <strong>d4 + Prc</strong> to Slash.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<hr>
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>🎲 <strong>d6 + Prc</strong> to Slash.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<p><strong>Heavy</strong></p>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“Says ‘Made by the Ninja Custodial Group’ on the handle”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Staff Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Forked Sword
+					</p>
+					<div class="attrib_icon attrib_bl">
+						⚔️ 3
+					</div>
+					<div class="attrib_icon attrib_br">
+						Str 🛡️
+					</div>
+				</div>
+				<div class="content">
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>🎲 <strong>d6 + Str</strong> to Pierce.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span style="visibility: hidden;" class="icon lesser_icon">
+									🈷️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>You can use the ‘Cast a spell’ ability as a part of this action.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<hr>
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>Cast a <strong>Blood Magic Spell</strong></p>
+							</div>
+						</div>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“Weapon used in the war against the gods. Vintage!”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Forked Sword Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, rebeccapurple 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<p>
+						Tower Shield
+					</p>
+				</div>
+				<div class="content">
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span class="icon tap_icon">
+									↪️
+								</span>
+								<span class="icon lesser_icon">
+									📣
+								</span>
+							</div>
+							<div class="action_detail">
+								<p>When <strong>targeted with a weapon:</strong> your attacker recieves <strong>2 disadvantage</strong> on their action.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<div class="symbol_wrapper_outer">
+							<div class="symbol_wrapper_inner">
+								<span style="visibility: hidden;" class="icon lesser_icon">
+									🈷️
+								</span>
+							</div>
+							<div class="action_detail">
+								<p><strong>Heavy</strong>.</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<hr>
+						<p>You can act as cover for another character.</p>
+					</div>
+					<div class="action">
+						<p><strong>Heavy</strong>.</p>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“Looks great with a flannel shirt.”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Shield Weapon
+				</div>
+			</div>
+		</div>
+		<div style="background:linear-gradient(225deg, rgba(0,0,0,1) -50%, DarkBlue 100%)" class="card">
+			<div class="group">
+				<div class="title">
+					<div class="attrib_icon attrib_tl">
+						🎲 1d8
+					</div>
+					<p>
+						Caster&#39;s Glove
+					</p>
+				</div>
+				<div class="content">
+					<div class="action">
+						<p><strong>Casting Focus</strong></p>
+					</div>
+					<div class="flavour_wrapper">
+						<div class="flavour">
+							<hr>
+							<p>“Modern  casting tool that works by directly drawing your blood”</p>
+						</div>
+					</div>
+				</div>
+				<div class="card_type">
+					Magic Casting Tool
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./web/bundle.js">
+	</script>
+	<script>
+		function downloadAsImage() {
+		  htmlToImage.toPng(document.getElementById('card_wrapper'))
+		    .then(function (dataUrl) {
+		      download(dataUrl, 'card_wrapper.png');
+		    });
+		}
+	</script>
+</html>

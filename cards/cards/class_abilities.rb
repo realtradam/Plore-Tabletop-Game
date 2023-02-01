@@ -1,4 +1,4 @@
-load 'card.rb'
+require_relative 'card.rb'
 
 class_abilities = {}
 
@@ -177,5 +177,5 @@ class_abilities[:palm_reading] = Card.new(
   type: 'Astrologist Ability',
 )
 
-File.write('class_abilities.html', Card.build(class_abilities.values))
+Card.output('class_abilities', class_abilities);
 

@@ -1,4 +1,4 @@
-load 'card.rb'
+require_relative 'card.rb'
 
 beginner_spells = {}
 
@@ -263,5 +263,4 @@ beginner_spells[:endure] = Card.new( #TODO
   type: 'Blood Spell Modified'
 )
 
-
-File.write('beginner_spells.html', Card.build(beginner_spells.values))
+Card.output('beginner_spells', beginner_spells);
