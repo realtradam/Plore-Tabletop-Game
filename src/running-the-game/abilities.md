@@ -72,6 +72,8 @@ To refresh a card means to undo its [tapped state](/running-the-game/abilities.m
 
 # Spellcasting
 
+[Spellcasting](../Spellcasting.md) [Archanologies](classes#Archanologies)
+
 Spells follow the same rules as abilities, but with some additional rules.
 
 ## Blood Magic

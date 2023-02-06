@@ -4,7 +4,7 @@
 `Magically Intune` Passive: Whenever you cast a spell that costs 1 or more blood you regenerate 1 health.
 
 ## Orc
-`Blood Rage` Activatable(1 Blood): Add 2 to your Fitness Strength or Fitness Endurance for this turn.
+`Blood Rage` Activatable(1 Blood): Add 2 to your Strength or Endurance untill your next check.
 
 ## Gnome
 `Crafty Skitter` Activatable(2 Energy): While you have able and targetable allies, you cannot be targeted by attacks until your next turn.
@@ -17,7 +17,7 @@ You can choose any Human Race as your sub-race and get their abilities in additi
 # Exotic Races
 
 ## Reptid
-`Tough Skin` Activatable(1 Blood): Block Slashing or Piercing damage from an attack up to or equal to your Physical Endurance.
+`Tough Skin` Activatable(1 Blood): Block Slashing or Pkiercing damage from an attack up to or equal to your Physical Endurance.
 
 ## Slime
 `Splatter` Passive: Deal 1 Acid damage to enemies that damage you with a melee weapon.

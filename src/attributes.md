@@ -4,7 +4,6 @@ All attributes are grouped up into 4 distinct groups, each group representing on
 
 ## Innate Stats:
 	stats chosen at the start that dont change
-	For new characters: [4, 3, 3, 2, 2, 1]
 | Score | Cost |
 | -- | -- |
 | 1 | 0 |

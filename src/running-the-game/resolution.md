@@ -11,7 +11,7 @@ GM determines:
 - how difficult a check is
 - what the relevant skill(s) is/are.
 - If there are any boons or penalties
-	- Each boon point is how many times you can reroll one of the dice.
+	- Each boon point is how many times you can reroll one of the dice. Each dice can only have a boon applied to it once.
 	- Each penalty point means the player removes their highest roll.
 | Medium |  Hard  | Extreme |
 |   ---  |  ----  |   ---   |

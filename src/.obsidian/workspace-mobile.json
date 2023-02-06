@@ -1,0 +1,137 @@
+{
+  "main": {
+    "id": "04904c05e54669c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "862d971c70d373d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bff301cada6cd1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Foreign Flesh Disease.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0233fa19f63ddf9b",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "0701eaa2cd4d2e25",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "byModifiedTime"
+          }
+        }
+      },
+      {
+        "id": "053bdde82280d4e5",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "74ebc3931d5d22a7",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "c5715f37af843ec0",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "1443da8b8bc8dd9e",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "42f8afcd52d7c55b",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Foreign Flesh Disease.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "75692afd4de105f0",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Foreign Flesh Disease.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "524ead8823d6cf22",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Foreign Flesh Disease.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "0bff301cada6cd1f",
+  "lastOpenFiles": [
+    "races.md",
+    "attributes.md",
+    "running-the-game/resolution.md",
+    "classes.md",
+    "running-the-game/abilities.md",
+    "Spellcasting.md",
+    "running-the-game/combat.md",
+    "running-the-game/weapons.md",
+    "intro.md",
+    "SUMMARY.md"
+  ]
+}
